@@ -1,0 +1,1578 @@
+{
+  "language": "go",
+  "label": "Go",
+  "version": "1.26.2",
+  "updatedAt": "2026-07-31T01:00:03.050Z",
+  "categories": [
+    {
+      "name": "Data Encoding & Compression",
+      "modules": [
+        {
+          "name": "tar",
+          "url": "https://pkg.go.dev/archive/tar@go1.26.2",
+          "description": "Package archive/tar",
+          "status": "stable"
+        },
+        {
+          "name": "zip",
+          "url": "https://pkg.go.dev/archive/zip@go1.26.2",
+          "description": "Package archive/zip",
+          "status": "stable"
+        },
+        {
+          "name": "bzip2",
+          "url": "https://pkg.go.dev/compress/bzip2@go1.26.2",
+          "description": "Package compress/bzip2",
+          "status": "stable"
+        },
+        {
+          "name": "flate",
+          "url": "https://pkg.go.dev/compress/flate@go1.26.2",
+          "description": "Package compress/flate",
+          "status": "stable"
+        },
+        {
+          "name": "gzip",
+          "url": "https://pkg.go.dev/compress/gzip@go1.26.2",
+          "description": "Package compress/gzip",
+          "status": "stable"
+        },
+        {
+          "name": "lzw",
+          "url": "https://pkg.go.dev/compress/lzw@go1.26.2",
+          "description": "Package compress/lzw",
+          "status": "stable"
+        },
+        {
+          "name": "zlib",
+          "url": "https://pkg.go.dev/compress/zlib@go1.26.2",
+          "description": "Package compress/zlib",
+          "status": "stable"
+        },
+        {
+          "name": "encoding",
+          "url": "https://pkg.go.dev/encoding@go1.26.2",
+          "description": "Package encoding",
+          "status": "stable"
+        },
+        {
+          "name": "ascii85",
+          "url": "https://pkg.go.dev/encoding/ascii85@go1.26.2",
+          "description": "Package encoding/ascii85",
+          "status": "stable"
+        },
+        {
+          "name": "asn1",
+          "url": "https://pkg.go.dev/encoding/asn1@go1.26.2",
+          "description": "Package encoding/asn1",
+          "status": "stable"
+        },
+        {
+          "name": "base32",
+          "url": "https://pkg.go.dev/encoding/base32@go1.26.2",
+          "description": "Package encoding/base32",
+          "status": "stable"
+        },
+        {
+          "name": "base64",
+          "url": "https://pkg.go.dev/encoding/base64@go1.26.2",
+          "description": "Package encoding/base64",
+          "status": "stable"
+        },
+        {
+          "name": "binary",
+          "url": "https://pkg.go.dev/encoding/binary@go1.26.2",
+          "description": "Package encoding/binary",
+          "status": "stable"
+        },
+        {
+          "name": "csv",
+          "url": "https://pkg.go.dev/encoding/csv@go1.26.2",
+          "description": "Package encoding/csv",
+          "status": "stable"
+        },
+        {
+          "name": "gob",
+          "url": "https://pkg.go.dev/encoding/gob@go1.26.2",
+          "description": "Package encoding/gob",
+          "status": "stable"
+        },
+        {
+          "name": "hex",
+          "url": "https://pkg.go.dev/encoding/hex@go1.26.2",
+          "description": "Package encoding/hex",
+          "status": "stable"
+        },
+        {
+          "name": "json",
+          "url": "https://pkg.go.dev/encoding/json@go1.26.2",
+          "description": "Package encoding/json",
+          "status": "stable"
+        },
+        {
+          "name": "pem",
+          "url": "https://pkg.go.dev/encoding/pem@go1.26.2",
+          "description": "Package encoding/pem",
+          "status": "stable"
+        },
+        {
+          "name": "xml",
+          "url": "https://pkg.go.dev/encoding/xml@go1.26.2",
+          "description": "Package encoding/xml",
+          "status": "stable"
+        },
+        {
+          "name": "image",
+          "url": "https://pkg.go.dev/image@go1.26.2",
+          "description": "Package image",
+          "status": "stable"
+        },
+        {
+          "name": "color",
+          "url": "https://pkg.go.dev/image/color@go1.26.2",
+          "description": "Package image/color",
+          "status": "stable"
+        },
+        {
+          "name": "color/palette",
+          "url": "https://pkg.go.dev/image/color/palette@go1.26.2",
+          "description": "Package image/color/palette",
+          "status": "stable"
+        },
+        {
+          "name": "draw",
+          "url": "https://pkg.go.dev/image/draw@go1.26.2",
+          "description": "Package image/draw",
+          "status": "stable"
+        },
+        {
+          "name": "gif",
+          "url": "https://pkg.go.dev/image/gif@go1.26.2",
+          "description": "Package image/gif",
+          "status": "stable"
+        },
+        {
+          "name": "internal/imageutil",
+          "url": "https://pkg.go.dev/image/internal/imageutil@go1.26.2",
+          "description": "Package image/internal/imageutil",
+          "status": "stable"
+        },
+        {
+          "name": "jpeg",
+          "url": "https://pkg.go.dev/image/jpeg@go1.26.2",
+          "description": "Package image/jpeg",
+          "status": "stable"
+        },
+        {
+          "name": "png",
+          "url": "https://pkg.go.dev/image/png@go1.26.2",
+          "description": "Package image/png",
+          "status": "stable"
+        },
+        {
+          "name": "mime",
+          "url": "https://pkg.go.dev/mime@go1.26.2",
+          "description": "Package mime",
+          "status": "stable"
+        },
+        {
+          "name": "multipart",
+          "url": "https://pkg.go.dev/mime/multipart@go1.26.2",
+          "description": "Package mime/multipart",
+          "status": "stable"
+        },
+        {
+          "name": "quotedprintable",
+          "url": "https://pkg.go.dev/mime/quotedprintable@go1.26.2",
+          "description": "Package mime/quotedprintable",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "I/O & Text Processing",
+      "modules": [
+        {
+          "name": "bufio",
+          "url": "https://pkg.go.dev/bufio@go1.26.2",
+          "description": "Package bufio",
+          "status": "stable"
+        },
+        {
+          "name": "bytes",
+          "url": "https://pkg.go.dev/bytes@go1.26.2",
+          "description": "Package bytes",
+          "status": "stable"
+        },
+        {
+          "name": "fmt",
+          "url": "https://pkg.go.dev/fmt@go1.26.2",
+          "description": "Package fmt",
+          "status": "stable"
+        },
+        {
+          "name": "io",
+          "url": "https://pkg.go.dev/io@go1.26.2",
+          "description": "Package io",
+          "status": "stable"
+        },
+        {
+          "name": "fs",
+          "url": "https://pkg.go.dev/io/fs@go1.26.2",
+          "description": "Package io/fs",
+          "status": "stable"
+        },
+        {
+          "name": "ioutil",
+          "url": "https://pkg.go.dev/io/ioutil@go1.26.2",
+          "description": "Package io/ioutil",
+          "status": "stable"
+        },
+        {
+          "name": "strconv",
+          "url": "https://pkg.go.dev/strconv@go1.26.2",
+          "description": "Package strconv",
+          "status": "stable"
+        },
+        {
+          "name": "strings",
+          "url": "https://pkg.go.dev/strings@go1.26.2",
+          "description": "Package strings",
+          "status": "stable"
+        },
+        {
+          "name": "scanner",
+          "url": "https://pkg.go.dev/text/scanner@go1.26.2",
+          "description": "Package text/scanner",
+          "status": "stable"
+        },
+        {
+          "name": "tabwriter",
+          "url": "https://pkg.go.dev/text/tabwriter@go1.26.2",
+          "description": "Package text/tabwriter",
+          "status": "stable"
+        },
+        {
+          "name": "template",
+          "url": "https://pkg.go.dev/text/template@go1.26.2",
+          "description": "Package text/template",
+          "status": "stable"
+        },
+        {
+          "name": "template/parse",
+          "url": "https://pkg.go.dev/text/template/parse@go1.26.2",
+          "description": "Package text/template/parse",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Math & Time",
+      "modules": [
+        {
+          "name": "cmp",
+          "url": "https://pkg.go.dev/cmp@go1.26.2",
+          "description": "Package cmp",
+          "status": "stable"
+        },
+        {
+          "name": "iter",
+          "url": "https://pkg.go.dev/iter@go1.26.2",
+          "description": "Package iter",
+          "status": "stable"
+        },
+        {
+          "name": "math",
+          "url": "https://pkg.go.dev/math@go1.26.2",
+          "description": "Package math",
+          "status": "stable"
+        },
+        {
+          "name": "big",
+          "url": "https://pkg.go.dev/math/big@go1.26.2",
+          "description": "Package math/big",
+          "status": "stable"
+        },
+        {
+          "name": "big/internal/asmgen",
+          "url": "https://pkg.go.dev/math/big/internal/asmgen@go1.26.2",
+          "description": "Package math/big/internal/asmgen",
+          "status": "stable"
+        },
+        {
+          "name": "bits",
+          "url": "https://pkg.go.dev/math/bits@go1.26.2",
+          "description": "Package math/bits",
+          "status": "stable"
+        },
+        {
+          "name": "cmplx",
+          "url": "https://pkg.go.dev/math/cmplx@go1.26.2",
+          "description": "Package math/cmplx",
+          "status": "stable"
+        },
+        {
+          "name": "rand",
+          "url": "https://pkg.go.dev/math/rand@go1.26.2",
+          "description": "Package math/rand",
+          "status": "stable"
+        },
+        {
+          "name": "rand/v2",
+          "url": "https://pkg.go.dev/math/rand/v2@go1.26.2",
+          "description": "Package math/rand/v2",
+          "status": "stable"
+        },
+        {
+          "name": "time",
+          "url": "https://pkg.go.dev/time@go1.26.2",
+          "description": "Package time",
+          "status": "stable"
+        },
+        {
+          "name": "tzdata",
+          "url": "https://pkg.go.dev/time/tzdata@go1.26.2",
+          "description": "Package time/tzdata",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Container",
+      "modules": [
+        {
+          "name": "heap",
+          "url": "https://pkg.go.dev/container/heap@go1.26.2",
+          "description": "Package container/heap",
+          "status": "stable"
+        },
+        {
+          "name": "list",
+          "url": "https://pkg.go.dev/container/list@go1.26.2",
+          "description": "Package container/list",
+          "status": "stable"
+        },
+        {
+          "name": "ring",
+          "url": "https://pkg.go.dev/container/ring@go1.26.2",
+          "description": "Package container/ring",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "System & OS",
+      "modules": [
+        {
+          "name": "context",
+          "url": "https://pkg.go.dev/context@go1.26.2",
+          "description": "Package context",
+          "status": "stable"
+        },
+        {
+          "name": "os",
+          "url": "https://pkg.go.dev/os@go1.26.2",
+          "description": "Package os",
+          "status": "stable"
+        },
+        {
+          "name": "exec",
+          "url": "https://pkg.go.dev/os/exec@go1.26.2",
+          "description": "Package os/exec",
+          "status": "stable"
+        },
+        {
+          "name": "exec/internal/fdtest",
+          "url": "https://pkg.go.dev/os/exec/internal/fdtest@go1.26.2",
+          "description": "Package os/exec/internal/fdtest",
+          "status": "stable"
+        },
+        {
+          "name": "signal",
+          "url": "https://pkg.go.dev/os/signal@go1.26.2",
+          "description": "Package os/signal",
+          "status": "stable"
+        },
+        {
+          "name": "user",
+          "url": "https://pkg.go.dev/os/user@go1.26.2",
+          "description": "Package os/user",
+          "status": "stable"
+        },
+        {
+          "name": "plugin",
+          "url": "https://pkg.go.dev/plugin@go1.26.2",
+          "description": "Package plugin",
+          "status": "stable"
+        },
+        {
+          "name": "sync",
+          "url": "https://pkg.go.dev/sync@go1.26.2",
+          "description": "Package sync",
+          "status": "stable"
+        },
+        {
+          "name": "atomic",
+          "url": "https://pkg.go.dev/sync/atomic@go1.26.2",
+          "description": "Package sync/atomic",
+          "status": "stable"
+        },
+        {
+          "name": "syscall",
+          "url": "https://pkg.go.dev/syscall@go1.26.2",
+          "description": "Package syscall",
+          "status": "stable"
+        },
+        {
+          "name": "unsafe",
+          "url": "https://pkg.go.dev/unsafe@go1.26.2",
+          "description": "Package unsafe",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Cryptography",
+      "modules": [
+        {
+          "name": "crypto",
+          "url": "https://pkg.go.dev/crypto@go1.26.2",
+          "description": "Package crypto",
+          "status": "stable"
+        },
+        {
+          "name": "aes",
+          "url": "https://pkg.go.dev/crypto/aes@go1.26.2",
+          "description": "Package crypto/aes",
+          "status": "stable"
+        },
+        {
+          "name": "cipher",
+          "url": "https://pkg.go.dev/crypto/cipher@go1.26.2",
+          "description": "Package crypto/cipher",
+          "status": "stable"
+        },
+        {
+          "name": "des",
+          "url": "https://pkg.go.dev/crypto/des@go1.26.2",
+          "description": "Package crypto/des",
+          "status": "stable"
+        },
+        {
+          "name": "dsa",
+          "url": "https://pkg.go.dev/crypto/dsa@go1.26.2",
+          "description": "Package crypto/dsa",
+          "status": "stable"
+        },
+        {
+          "name": "ecdh",
+          "url": "https://pkg.go.dev/crypto/ecdh@go1.26.2",
+          "description": "Package crypto/ecdh",
+          "status": "stable"
+        },
+        {
+          "name": "ecdsa",
+          "url": "https://pkg.go.dev/crypto/ecdsa@go1.26.2",
+          "description": "Package crypto/ecdsa",
+          "status": "stable"
+        },
+        {
+          "name": "ed25519",
+          "url": "https://pkg.go.dev/crypto/ed25519@go1.26.2",
+          "description": "Package crypto/ed25519",
+          "status": "stable"
+        },
+        {
+          "name": "elliptic",
+          "url": "https://pkg.go.dev/crypto/elliptic@go1.26.2",
+          "description": "Package crypto/elliptic",
+          "status": "stable"
+        },
+        {
+          "name": "fips140",
+          "url": "https://pkg.go.dev/crypto/fips140@go1.26.2",
+          "description": "Package crypto/fips140",
+          "status": "stable"
+        },
+        {
+          "name": "hkdf",
+          "url": "https://pkg.go.dev/crypto/hkdf@go1.26.2",
+          "description": "Package crypto/hkdf",
+          "status": "stable"
+        },
+        {
+          "name": "hmac",
+          "url": "https://pkg.go.dev/crypto/hmac@go1.26.2",
+          "description": "Package crypto/hmac",
+          "status": "stable"
+        },
+        {
+          "name": "hpke",
+          "url": "https://pkg.go.dev/crypto/hpke@go1.26.2",
+          "description": "Package crypto/hpke",
+          "status": "stable"
+        },
+        {
+          "name": "internal/boring",
+          "url": "https://pkg.go.dev/crypto/internal/boring@go1.26.2",
+          "description": "Package crypto/internal/boring",
+          "status": "stable"
+        },
+        {
+          "name": "internal/boring/bbig",
+          "url": "https://pkg.go.dev/crypto/internal/boring/bbig@go1.26.2",
+          "description": "Package crypto/internal/boring/bbig",
+          "status": "stable"
+        },
+        {
+          "name": "internal/boring/bcache",
+          "url": "https://pkg.go.dev/crypto/internal/boring/bcache@go1.26.2",
+          "description": "Package crypto/internal/boring/bcache",
+          "status": "stable"
+        },
+        {
+          "name": "internal/boring/sig",
+          "url": "https://pkg.go.dev/crypto/internal/boring/sig@go1.26.2",
+          "description": "Package crypto/internal/boring/sig",
+          "status": "stable"
+        },
+        {
+          "name": "internal/constanttime",
+          "url": "https://pkg.go.dev/crypto/internal/constanttime@go1.26.2",
+          "description": "Package crypto/internal/constanttime",
+          "status": "stable"
+        },
+        {
+          "name": "internal/cryptotest",
+          "url": "https://pkg.go.dev/crypto/internal/cryptotest@go1.26.2",
+          "description": "Package crypto/internal/cryptotest",
+          "status": "stable"
+        },
+        {
+          "name": "internal/entropy",
+          "url": "https://pkg.go.dev/crypto/internal/entropy@go1.26.2",
+          "description": "Package crypto/internal/entropy",
+          "status": "stable"
+        },
+        {
+          "name": "internal/entropy/v1.0.0",
+          "url": "https://pkg.go.dev/crypto/internal/entropy/v1.0.0@go1.26.2",
+          "description": "Package crypto/internal/entropy/v1.0.0",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140",
+          "url": "https://pkg.go.dev/crypto/internal/fips140@go1.26.2",
+          "description": "Package crypto/internal/fips140",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/aes",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/aes@go1.26.2",
+          "description": "Package crypto/internal/fips140/aes",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/aes/gcm",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/aes/gcm@go1.26.2",
+          "description": "Package crypto/internal/fips140/aes/gcm",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/alias",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/alias@go1.26.2",
+          "description": "Package crypto/internal/fips140/alias",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/bigmod",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/bigmod@go1.26.2",
+          "description": "Package crypto/internal/fips140/bigmod",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/check",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/check@go1.26.2",
+          "description": "Package crypto/internal/fips140/check",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/check/checktest",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/check/checktest@go1.26.2",
+          "description": "Package crypto/internal/fips140/check/checktest",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/drbg",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/drbg@go1.26.2",
+          "description": "Package crypto/internal/fips140/drbg",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/ecdh",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/ecdh@go1.26.2",
+          "description": "Package crypto/internal/fips140/ecdh",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/ecdsa",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/ecdsa@go1.26.2",
+          "description": "Package crypto/internal/fips140/ecdsa",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/ed25519",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/ed25519@go1.26.2",
+          "description": "Package crypto/internal/fips140/ed25519",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/edwards25519",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/edwards25519@go1.26.2",
+          "description": "Package crypto/internal/fips140/edwards25519",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/edwards25519/field",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/edwards25519/field@go1.26.2",
+          "description": "Package crypto/internal/fips140/edwards25519/field",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/hkdf",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/hkdf@go1.26.2",
+          "description": "Package crypto/internal/fips140/hkdf",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/hmac",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/hmac@go1.26.2",
+          "description": "Package crypto/internal/fips140/hmac",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/mldsa",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/mldsa@go1.26.2",
+          "description": "Package crypto/internal/fips140/mldsa",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/mlkem",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/mlkem@go1.26.2",
+          "description": "Package crypto/internal/fips140/mlkem",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/nistec",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/nistec@go1.26.2",
+          "description": "Package crypto/internal/fips140/nistec",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/nistec/fiat",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/nistec/fiat@go1.26.2",
+          "description": "Package crypto/internal/fips140/nistec/fiat",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/pbkdf2",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/pbkdf2@go1.26.2",
+          "description": "Package crypto/internal/fips140/pbkdf2",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/rsa",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/rsa@go1.26.2",
+          "description": "Package crypto/internal/fips140/rsa",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/sha256",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/sha256@go1.26.2",
+          "description": "Package crypto/internal/fips140/sha256",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/sha3",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/sha3@go1.26.2",
+          "description": "Package crypto/internal/fips140/sha3",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/sha512",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/sha512@go1.26.2",
+          "description": "Package crypto/internal/fips140/sha512",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/ssh",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/ssh@go1.26.2",
+          "description": "Package crypto/internal/fips140/ssh",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/subtle",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/subtle@go1.26.2",
+          "description": "Package crypto/internal/fips140/subtle",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/tls12",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/tls12@go1.26.2",
+          "description": "Package crypto/internal/fips140/tls12",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140/tls13",
+          "url": "https://pkg.go.dev/crypto/internal/fips140/tls13@go1.26.2",
+          "description": "Package crypto/internal/fips140/tls13",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140cache",
+          "url": "https://pkg.go.dev/crypto/internal/fips140cache@go1.26.2",
+          "description": "Package crypto/internal/fips140cache",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140deps",
+          "url": "https://pkg.go.dev/crypto/internal/fips140deps@go1.26.2",
+          "description": "Package crypto/internal/fips140deps",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140deps/byteorder",
+          "url": "https://pkg.go.dev/crypto/internal/fips140deps/byteorder@go1.26.2",
+          "description": "Package crypto/internal/fips140deps/byteorder",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140deps/cpu",
+          "url": "https://pkg.go.dev/crypto/internal/fips140deps/cpu@go1.26.2",
+          "description": "Package crypto/internal/fips140deps/cpu",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140deps/godebug",
+          "url": "https://pkg.go.dev/crypto/internal/fips140deps/godebug@go1.26.2",
+          "description": "Package crypto/internal/fips140deps/godebug",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140deps/time",
+          "url": "https://pkg.go.dev/crypto/internal/fips140deps/time@go1.26.2",
+          "description": "Package crypto/internal/fips140deps/time",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140hash",
+          "url": "https://pkg.go.dev/crypto/internal/fips140hash@go1.26.2",
+          "description": "Package crypto/internal/fips140hash",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140only",
+          "url": "https://pkg.go.dev/crypto/internal/fips140only@go1.26.2",
+          "description": "Package crypto/internal/fips140only",
+          "status": "stable"
+        },
+        {
+          "name": "internal/fips140test",
+          "url": "https://pkg.go.dev/crypto/internal/fips140test@go1.26.2",
+          "description": "Package crypto/internal/fips140test",
+          "status": "stable"
+        },
+        {
+          "name": "internal/impl",
+          "url": "https://pkg.go.dev/crypto/internal/impl@go1.26.2",
+          "description": "Package crypto/internal/impl",
+          "status": "stable"
+        },
+        {
+          "name": "internal/rand",
+          "url": "https://pkg.go.dev/crypto/internal/rand@go1.26.2",
+          "description": "Package crypto/internal/rand",
+          "status": "stable"
+        },
+        {
+          "name": "internal/randutil",
+          "url": "https://pkg.go.dev/crypto/internal/randutil@go1.26.2",
+          "description": "Package crypto/internal/randutil",
+          "status": "stable"
+        },
+        {
+          "name": "internal/sysrand",
+          "url": "https://pkg.go.dev/crypto/internal/sysrand@go1.26.2",
+          "description": "Package crypto/internal/sysrand",
+          "status": "stable"
+        },
+        {
+          "name": "internal/sysrand/internal/seccomp",
+          "url": "https://pkg.go.dev/crypto/internal/sysrand/internal/seccomp@go1.26.2",
+          "description": "Package crypto/internal/sysrand/internal/seccomp",
+          "status": "stable"
+        },
+        {
+          "name": "md5",
+          "url": "https://pkg.go.dev/crypto/md5@go1.26.2",
+          "description": "Package crypto/md5",
+          "status": "stable"
+        },
+        {
+          "name": "mlkem",
+          "url": "https://pkg.go.dev/crypto/mlkem@go1.26.2",
+          "description": "Package crypto/mlkem",
+          "status": "stable"
+        },
+        {
+          "name": "mlkem/mlkemtest",
+          "url": "https://pkg.go.dev/crypto/mlkem/mlkemtest@go1.26.2",
+          "description": "Package crypto/mlkem/mlkemtest",
+          "status": "stable"
+        },
+        {
+          "name": "pbkdf2",
+          "url": "https://pkg.go.dev/crypto/pbkdf2@go1.26.2",
+          "description": "Package crypto/pbkdf2",
+          "status": "stable"
+        },
+        {
+          "name": "rand",
+          "url": "https://pkg.go.dev/crypto/rand@go1.26.2",
+          "description": "Package crypto/rand",
+          "status": "stable"
+        },
+        {
+          "name": "rc4",
+          "url": "https://pkg.go.dev/crypto/rc4@go1.26.2",
+          "description": "Package crypto/rc4",
+          "status": "stable"
+        },
+        {
+          "name": "rsa",
+          "url": "https://pkg.go.dev/crypto/rsa@go1.26.2",
+          "description": "Package crypto/rsa",
+          "status": "stable"
+        },
+        {
+          "name": "sha1",
+          "url": "https://pkg.go.dev/crypto/sha1@go1.26.2",
+          "description": "Package crypto/sha1",
+          "status": "stable"
+        },
+        {
+          "name": "sha256",
+          "url": "https://pkg.go.dev/crypto/sha256@go1.26.2",
+          "description": "Package crypto/sha256",
+          "status": "stable"
+        },
+        {
+          "name": "sha3",
+          "url": "https://pkg.go.dev/crypto/sha3@go1.26.2",
+          "description": "Package crypto/sha3",
+          "status": "stable"
+        },
+        {
+          "name": "sha512",
+          "url": "https://pkg.go.dev/crypto/sha512@go1.26.2",
+          "description": "Package crypto/sha512",
+          "status": "stable"
+        },
+        {
+          "name": "subtle",
+          "url": "https://pkg.go.dev/crypto/subtle@go1.26.2",
+          "description": "Package crypto/subtle",
+          "status": "stable"
+        },
+        {
+          "name": "tls",
+          "url": "https://pkg.go.dev/crypto/tls@go1.26.2",
+          "description": "Package crypto/tls",
+          "status": "stable"
+        },
+        {
+          "name": "tls/internal/fips140tls",
+          "url": "https://pkg.go.dev/crypto/tls/internal/fips140tls@go1.26.2",
+          "description": "Package crypto/tls/internal/fips140tls",
+          "status": "stable"
+        },
+        {
+          "name": "x509",
+          "url": "https://pkg.go.dev/crypto/x509@go1.26.2",
+          "description": "Package crypto/x509",
+          "status": "stable"
+        },
+        {
+          "name": "x509/internal/macos",
+          "url": "https://pkg.go.dev/crypto/x509/internal/macos@go1.26.2",
+          "description": "Package crypto/x509/internal/macos",
+          "status": "stable"
+        },
+        {
+          "name": "x509/pkix",
+          "url": "https://pkg.go.dev/crypto/x509/pkix@go1.26.2",
+          "description": "Package crypto/x509/pkix",
+          "status": "stable"
+        },
+        {
+          "name": "hash",
+          "url": "https://pkg.go.dev/hash@go1.26.2",
+          "description": "Package hash",
+          "status": "stable"
+        },
+        {
+          "name": "adler32",
+          "url": "https://pkg.go.dev/hash/adler32@go1.26.2",
+          "description": "Package hash/adler32",
+          "status": "stable"
+        },
+        {
+          "name": "crc32",
+          "url": "https://pkg.go.dev/hash/crc32@go1.26.2",
+          "description": "Package hash/crc32",
+          "status": "stable"
+        },
+        {
+          "name": "crc64",
+          "url": "https://pkg.go.dev/hash/crc64@go1.26.2",
+          "description": "Package hash/crc64",
+          "status": "stable"
+        },
+        {
+          "name": "fnv",
+          "url": "https://pkg.go.dev/hash/fnv@go1.26.2",
+          "description": "Package hash/fnv",
+          "status": "stable"
+        },
+        {
+          "name": "maphash",
+          "url": "https://pkg.go.dev/hash/maphash@go1.26.2",
+          "description": "Package hash/maphash",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Data & Configuration",
+      "modules": [
+        {
+          "name": "sql",
+          "url": "https://pkg.go.dev/database/sql@go1.26.2",
+          "description": "Package database/sql",
+          "status": "stable"
+        },
+        {
+          "name": "sql/driver",
+          "url": "https://pkg.go.dev/database/sql/driver@go1.26.2",
+          "description": "Package database/sql/driver",
+          "status": "stable"
+        },
+        {
+          "name": "embed",
+          "url": "https://pkg.go.dev/embed@go1.26.2",
+          "description": "Package embed",
+          "status": "stable"
+        },
+        {
+          "name": "internal/embedtest",
+          "url": "https://pkg.go.dev/embed/internal/embedtest@go1.26.2",
+          "description": "Package embed/internal/embedtest",
+          "status": "stable"
+        },
+        {
+          "name": "flag",
+          "url": "https://pkg.go.dev/flag@go1.26.2",
+          "description": "Package flag",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Development Tools",
+      "modules": [
+        {
+          "name": "buildinfo",
+          "url": "https://pkg.go.dev/debug/buildinfo@go1.26.2",
+          "description": "Package debug/buildinfo",
+          "status": "stable"
+        },
+        {
+          "name": "dwarf",
+          "url": "https://pkg.go.dev/debug/dwarf@go1.26.2",
+          "description": "Package debug/dwarf",
+          "status": "stable"
+        },
+        {
+          "name": "elf",
+          "url": "https://pkg.go.dev/debug/elf@go1.26.2",
+          "description": "Package debug/elf",
+          "status": "stable"
+        },
+        {
+          "name": "gosym",
+          "url": "https://pkg.go.dev/debug/gosym@go1.26.2",
+          "description": "Package debug/gosym",
+          "status": "stable"
+        },
+        {
+          "name": "macho",
+          "url": "https://pkg.go.dev/debug/macho@go1.26.2",
+          "description": "Package debug/macho",
+          "status": "stable"
+        },
+        {
+          "name": "pe",
+          "url": "https://pkg.go.dev/debug/pe@go1.26.2",
+          "description": "Package debug/pe",
+          "status": "stable"
+        },
+        {
+          "name": "plan9obj",
+          "url": "https://pkg.go.dev/debug/plan9obj@go1.26.2",
+          "description": "Package debug/plan9obj",
+          "status": "stable"
+        },
+        {
+          "name": "ast",
+          "url": "https://pkg.go.dev/go/ast@go1.26.2",
+          "description": "Package go/ast",
+          "status": "stable"
+        },
+        {
+          "name": "build",
+          "url": "https://pkg.go.dev/go/build@go1.26.2",
+          "description": "Package go/build",
+          "status": "stable"
+        },
+        {
+          "name": "build/constraint",
+          "url": "https://pkg.go.dev/go/build/constraint@go1.26.2",
+          "description": "Package go/build/constraint",
+          "status": "stable"
+        },
+        {
+          "name": "constant",
+          "url": "https://pkg.go.dev/go/constant@go1.26.2",
+          "description": "Package go/constant",
+          "status": "stable"
+        },
+        {
+          "name": "doc",
+          "url": "https://pkg.go.dev/go/doc@go1.26.2",
+          "description": "Package go/doc",
+          "status": "stable"
+        },
+        {
+          "name": "doc/comment",
+          "url": "https://pkg.go.dev/go/doc/comment@go1.26.2",
+          "description": "Package go/doc/comment",
+          "status": "stable"
+        },
+        {
+          "name": "format",
+          "url": "https://pkg.go.dev/go/format@go1.26.2",
+          "description": "Package go/format",
+          "status": "stable"
+        },
+        {
+          "name": "importer",
+          "url": "https://pkg.go.dev/go/importer@go1.26.2",
+          "description": "Package go/importer",
+          "status": "stable"
+        },
+        {
+          "name": "internal/gccgoimporter",
+          "url": "https://pkg.go.dev/go/internal/gccgoimporter@go1.26.2",
+          "description": "Package go/internal/gccgoimporter",
+          "status": "stable"
+        },
+        {
+          "name": "internal/gcimporter",
+          "url": "https://pkg.go.dev/go/internal/gcimporter@go1.26.2",
+          "description": "Package go/internal/gcimporter",
+          "status": "stable"
+        },
+        {
+          "name": "internal/scannerhooks",
+          "url": "https://pkg.go.dev/go/internal/scannerhooks@go1.26.2",
+          "description": "Package go/internal/scannerhooks",
+          "status": "stable"
+        },
+        {
+          "name": "internal/srcimporter",
+          "url": "https://pkg.go.dev/go/internal/srcimporter@go1.26.2",
+          "description": "Package go/internal/srcimporter",
+          "status": "stable"
+        },
+        {
+          "name": "parser",
+          "url": "https://pkg.go.dev/go/parser@go1.26.2",
+          "description": "Package go/parser",
+          "status": "stable"
+        },
+        {
+          "name": "printer",
+          "url": "https://pkg.go.dev/go/printer@go1.26.2",
+          "description": "Package go/printer",
+          "status": "stable"
+        },
+        {
+          "name": "scanner",
+          "url": "https://pkg.go.dev/go/scanner@go1.26.2",
+          "description": "Package go/scanner",
+          "status": "stable"
+        },
+        {
+          "name": "token",
+          "url": "https://pkg.go.dev/go/token@go1.26.2",
+          "description": "Package go/token",
+          "status": "stable"
+        },
+        {
+          "name": "types",
+          "url": "https://pkg.go.dev/go/types@go1.26.2",
+          "description": "Package go/types",
+          "status": "stable"
+        },
+        {
+          "name": "version",
+          "url": "https://pkg.go.dev/go/version@go1.26.2",
+          "description": "Package go/version",
+          "status": "stable"
+        },
+        {
+          "name": "maps",
+          "url": "https://pkg.go.dev/maps@go1.26.2",
+          "description": "Package maps",
+          "status": "stable"
+        },
+        {
+          "name": "reflect",
+          "url": "https://pkg.go.dev/reflect@go1.26.2",
+          "description": "Package reflect",
+          "status": "stable"
+        },
+        {
+          "name": "internal/example1",
+          "url": "https://pkg.go.dev/reflect/internal/example1@go1.26.2",
+          "description": "Package reflect/internal/example1",
+          "status": "stable"
+        },
+        {
+          "name": "internal/example2",
+          "url": "https://pkg.go.dev/reflect/internal/example2@go1.26.2",
+          "description": "Package reflect/internal/example2",
+          "status": "stable"
+        },
+        {
+          "name": "regexp",
+          "url": "https://pkg.go.dev/regexp@go1.26.2",
+          "description": "Package regexp",
+          "status": "stable"
+        },
+        {
+          "name": "syntax",
+          "url": "https://pkg.go.dev/regexp/syntax@go1.26.2",
+          "description": "Package regexp/syntax",
+          "status": "stable"
+        },
+        {
+          "name": "runtime",
+          "url": "https://pkg.go.dev/runtime@go1.26.2",
+          "description": "Package runtime",
+          "status": "stable"
+        },
+        {
+          "name": "cgo",
+          "url": "https://pkg.go.dev/runtime/cgo@go1.26.2",
+          "description": "Package runtime/cgo",
+          "status": "stable"
+        },
+        {
+          "name": "coverage",
+          "url": "https://pkg.go.dev/runtime/coverage@go1.26.2",
+          "description": "Package runtime/coverage",
+          "status": "stable"
+        },
+        {
+          "name": "debug",
+          "url": "https://pkg.go.dev/runtime/debug@go1.26.2",
+          "description": "Package runtime/debug",
+          "status": "stable"
+        },
+        {
+          "name": "metrics",
+          "url": "https://pkg.go.dev/runtime/metrics@go1.26.2",
+          "description": "Package runtime/metrics",
+          "status": "stable"
+        },
+        {
+          "name": "pprof",
+          "url": "https://pkg.go.dev/runtime/pprof@go1.26.2",
+          "description": "Package runtime/pprof",
+          "status": "stable"
+        },
+        {
+          "name": "race",
+          "url": "https://pkg.go.dev/runtime/race@go1.26.2",
+          "description": "Package runtime/race",
+          "status": "stable"
+        },
+        {
+          "name": "race/internal/amd64v1",
+          "url": "https://pkg.go.dev/runtime/race/internal/amd64v1@go1.26.2",
+          "description": "Package runtime/race/internal/amd64v1",
+          "status": "stable"
+        },
+        {
+          "name": "trace",
+          "url": "https://pkg.go.dev/runtime/trace@go1.26.2",
+          "description": "Package runtime/trace",
+          "status": "stable"
+        },
+        {
+          "name": "slices",
+          "url": "https://pkg.go.dev/slices@go1.26.2",
+          "description": "Package slices",
+          "status": "stable"
+        },
+        {
+          "name": "sort",
+          "url": "https://pkg.go.dev/sort@go1.26.2",
+          "description": "Package sort",
+          "status": "stable"
+        },
+        {
+          "name": "testing",
+          "url": "https://pkg.go.dev/testing@go1.26.2",
+          "description": "Package testing",
+          "status": "stable"
+        },
+        {
+          "name": "cryptotest",
+          "url": "https://pkg.go.dev/testing/cryptotest@go1.26.2",
+          "description": "Package testing/cryptotest",
+          "status": "stable"
+        },
+        {
+          "name": "fstest",
+          "url": "https://pkg.go.dev/testing/fstest@go1.26.2",
+          "description": "Package testing/fstest",
+          "status": "stable"
+        },
+        {
+          "name": "internal/testdeps",
+          "url": "https://pkg.go.dev/testing/internal/testdeps@go1.26.2",
+          "description": "Package testing/internal/testdeps",
+          "status": "stable"
+        },
+        {
+          "name": "iotest",
+          "url": "https://pkg.go.dev/testing/iotest@go1.26.2",
+          "description": "Package testing/iotest",
+          "status": "stable"
+        },
+        {
+          "name": "quick",
+          "url": "https://pkg.go.dev/testing/quick@go1.26.2",
+          "description": "Package testing/quick",
+          "status": "stable"
+        },
+        {
+          "name": "slogtest",
+          "url": "https://pkg.go.dev/testing/slogtest@go1.26.2",
+          "description": "Package testing/slogtest",
+          "status": "stable"
+        },
+        {
+          "name": "synctest",
+          "url": "https://pkg.go.dev/testing/synctest@go1.26.2",
+          "description": "Package testing/synctest",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Application",
+      "modules": [
+        {
+          "name": "errors",
+          "url": "https://pkg.go.dev/errors@go1.26.2",
+          "description": "Package errors",
+          "status": "stable"
+        },
+        {
+          "name": "expvar",
+          "url": "https://pkg.go.dev/expvar@go1.26.2",
+          "description": "Package expvar",
+          "status": "stable"
+        },
+        {
+          "name": "unique",
+          "url": "https://pkg.go.dev/unique@go1.26.2",
+          "description": "Package unique",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Web & Networking",
+      "modules": [
+        {
+          "name": "html",
+          "url": "https://pkg.go.dev/html@go1.26.2",
+          "description": "Package html",
+          "status": "stable"
+        },
+        {
+          "name": "template",
+          "url": "https://pkg.go.dev/html/template@go1.26.2",
+          "description": "Package html/template",
+          "status": "stable"
+        },
+        {
+          "name": "log",
+          "url": "https://pkg.go.dev/log@go1.26.2",
+          "description": "Package log",
+          "status": "stable"
+        },
+        {
+          "name": "internal",
+          "url": "https://pkg.go.dev/log/internal@go1.26.2",
+          "description": "Package log/internal",
+          "status": "stable"
+        },
+        {
+          "name": "slog",
+          "url": "https://pkg.go.dev/log/slog@go1.26.2",
+          "description": "Package log/slog",
+          "status": "stable"
+        },
+        {
+          "name": "slog/internal",
+          "url": "https://pkg.go.dev/log/slog/internal@go1.26.2",
+          "description": "Package log/slog/internal",
+          "status": "stable"
+        },
+        {
+          "name": "slog/internal/benchmarks",
+          "url": "https://pkg.go.dev/log/slog/internal/benchmarks@go1.26.2",
+          "description": "Package log/slog/internal/benchmarks",
+          "status": "stable"
+        },
+        {
+          "name": "slog/internal/buffer",
+          "url": "https://pkg.go.dev/log/slog/internal/buffer@go1.26.2",
+          "description": "Package log/slog/internal/buffer",
+          "status": "stable"
+        },
+        {
+          "name": "syslog",
+          "url": "https://pkg.go.dev/log/syslog@go1.26.2",
+          "description": "Package log/syslog",
+          "status": "stable"
+        },
+        {
+          "name": "net",
+          "url": "https://pkg.go.dev/net@go1.26.2",
+          "description": "Package net",
+          "status": "stable"
+        },
+        {
+          "name": "http",
+          "url": "https://pkg.go.dev/net/http@go1.26.2",
+          "description": "Package net/http",
+          "status": "stable"
+        },
+        {
+          "name": "http/cgi",
+          "url": "https://pkg.go.dev/net/http/cgi@go1.26.2",
+          "description": "Package net/http/cgi",
+          "status": "stable"
+        },
+        {
+          "name": "http/cookiejar",
+          "url": "https://pkg.go.dev/net/http/cookiejar@go1.26.2",
+          "description": "Package net/http/cookiejar",
+          "status": "stable"
+        },
+        {
+          "name": "http/fcgi",
+          "url": "https://pkg.go.dev/net/http/fcgi@go1.26.2",
+          "description": "Package net/http/fcgi",
+          "status": "stable"
+        },
+        {
+          "name": "http/httptest",
+          "url": "https://pkg.go.dev/net/http/httptest@go1.26.2",
+          "description": "Package net/http/httptest",
+          "status": "stable"
+        },
+        {
+          "name": "http/httptrace",
+          "url": "https://pkg.go.dev/net/http/httptrace@go1.26.2",
+          "description": "Package net/http/httptrace",
+          "status": "stable"
+        },
+        {
+          "name": "http/httputil",
+          "url": "https://pkg.go.dev/net/http/httputil@go1.26.2",
+          "description": "Package net/http/httputil",
+          "status": "stable"
+        },
+        {
+          "name": "http/internal",
+          "url": "https://pkg.go.dev/net/http/internal@go1.26.2",
+          "description": "Package net/http/internal",
+          "status": "stable"
+        },
+        {
+          "name": "http/internal/ascii",
+          "url": "https://pkg.go.dev/net/http/internal/ascii@go1.26.2",
+          "description": "Package net/http/internal/ascii",
+          "status": "stable"
+        },
+        {
+          "name": "http/internal/httpcommon",
+          "url": "https://pkg.go.dev/net/http/internal/httpcommon@go1.26.2",
+          "description": "Package net/http/internal/httpcommon",
+          "status": "stable"
+        },
+        {
+          "name": "http/internal/testcert",
+          "url": "https://pkg.go.dev/net/http/internal/testcert@go1.26.2",
+          "description": "Package net/http/internal/testcert",
+          "status": "stable"
+        },
+        {
+          "name": "http/pprof",
+          "url": "https://pkg.go.dev/net/http/pprof@go1.26.2",
+          "description": "Package net/http/pprof",
+          "status": "stable"
+        },
+        {
+          "name": "internal/cgotest",
+          "url": "https://pkg.go.dev/net/internal/cgotest@go1.26.2",
+          "description": "Package net/internal/cgotest",
+          "status": "stable"
+        },
+        {
+          "name": "internal/socktest",
+          "url": "https://pkg.go.dev/net/internal/socktest@go1.26.2",
+          "description": "Package net/internal/socktest",
+          "status": "stable"
+        },
+        {
+          "name": "mail",
+          "url": "https://pkg.go.dev/net/mail@go1.26.2",
+          "description": "Package net/mail",
+          "status": "stable"
+        },
+        {
+          "name": "netip",
+          "url": "https://pkg.go.dev/net/netip@go1.26.2",
+          "description": "Package net/netip",
+          "status": "stable"
+        },
+        {
+          "name": "rpc",
+          "url": "https://pkg.go.dev/net/rpc@go1.26.2",
+          "description": "Package net/rpc",
+          "status": "stable"
+        },
+        {
+          "name": "rpc/jsonrpc",
+          "url": "https://pkg.go.dev/net/rpc/jsonrpc@go1.26.2",
+          "description": "Package net/rpc/jsonrpc",
+          "status": "stable"
+        },
+        {
+          "name": "smtp",
+          "url": "https://pkg.go.dev/net/smtp@go1.26.2",
+          "description": "Package net/smtp",
+          "status": "stable"
+        },
+        {
+          "name": "textproto",
+          "url": "https://pkg.go.dev/net/textproto@go1.26.2",
+          "description": "Package net/textproto",
+          "status": "stable"
+        },
+        {
+          "name": "url",
+          "url": "https://pkg.go.dev/net/url@go1.26.2",
+          "description": "Package net/url",
+          "status": "stable"
+        },
+        {
+          "name": "path",
+          "url": "https://pkg.go.dev/path@go1.26.2",
+          "description": "Package path",
+          "status": "stable"
+        },
+        {
+          "name": "filepath",
+          "url": "https://pkg.go.dev/path/filepath@go1.26.2",
+          "description": "Package path/filepath",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Index",
+      "modules": [
+        {
+          "name": "suffixarray",
+          "url": "https://pkg.go.dev/index/suffixarray@go1.26.2",
+          "description": "Package index/suffixarray",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Structs",
+      "modules": [
+        {
+          "name": "structs",
+          "url": "https://pkg.go.dev/structs@go1.26.2",
+          "description": "Package structs",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Unicode",
+      "modules": [
+        {
+          "name": "unicode",
+          "url": "https://pkg.go.dev/unicode@go1.26.2",
+          "description": "Package unicode",
+          "status": "stable"
+        },
+        {
+          "name": "utf16",
+          "url": "https://pkg.go.dev/unicode/utf16@go1.26.2",
+          "description": "Package unicode/utf16",
+          "status": "stable"
+        },
+        {
+          "name": "utf8",
+          "url": "https://pkg.go.dev/unicode/utf8@go1.26.2",
+          "description": "Package unicode/utf8",
+          "status": "stable"
+        }
+      ]
+    },
+    {
+      "name": "Weak",
+      "modules": [
+        {
+          "name": "weak",
+          "url": "https://pkg.go.dev/weak@go1.26.2",
+          "description": "Package weak",
+          "status": "stable"
+        }
+      ]
+    }
+  ]
+}

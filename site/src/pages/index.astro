@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { loadAllLanguages } from '../lib/data'
+
+const languages = loadAllLanguages()
+languages.sort((a, b) => a.label.localeCompare(b.label))
+---
+
+<Layout title="standard-libraries-now">
+  <header class="header">
+    <h1 class="title">standard-libraries-now</h1>
+    <p class="subtitle">Tracking standard libraries across languages</p>
+  </header>
+
+  <main class="grid">
+    {
+      languages.map((lang) => {
+        const totalModules = lang.categories.reduce((a, c) => a + c.modules.length, 0)
+        return (
+          <a href={`/${lang.language}/`} class="card">
+            <div class="card-header">
+              <h2 class="lang-name">{lang.label}</h2>
+              <span class="version">{lang.version}</span>
+            </div>
+            <p class="stats">{totalModules} modules in {lang.categories.length} categories</p>
+            <div class="category-list">
+              {lang.categories.map(cat => (
+                <span class="cat-tag">{cat.name}</span>
+              ))}
+            </div>
+          </a>
+        )
+      })
+    }
+  </main>
+</Layout>
+
+<style>
+  .header {
+    border-bottom: 4px solid #000;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    color: #555;
+  }
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 0 1.5rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .card {
+    display: block;
+    border: 3px solid #000;
+    border-radius: 4px;
+    padding: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.1s;
+  }
+  .card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 #000;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+  .lang-name {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .version {
+    font-size: 0.85rem;
+    font-weight: 700;
+    background: #FFE600;
+    padding: 0.15rem 0.5rem;
+    border: 2px solid #000;
+    border-radius: 3px;
+  }
+  .stats {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+  .category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .cat-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.15rem 0.45rem;
+    border: 1.5px solid #000;
+    border-radius: 2px;
+    background: #f5f5f5;
+  }
+</style>

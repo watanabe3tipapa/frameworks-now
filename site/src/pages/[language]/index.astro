@@ -1,0 +1,162 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { loadLanguage, loadAllLanguages } from '../../lib/data'
+
+export async function getStaticPaths() {
+  const languages = loadAllLanguages()
+  return languages.map(lang => ({
+    params: { language: lang.language },
+    props: { lang },
+  }))
+}
+
+const { lang } = Astro.props
+
+const statusColor: Record<string, string> = {
+  stable: '#00E5FF',
+  experimental: '#FFE600',
+  deprecated: '#FF69B4',
+}
+
+const totalModules = lang.categories.reduce((a: number, c: any) => a + c.modules.length, 0)
+---
+
+<Layout title={`${lang.label} — standard-libraries-now`}>
+  <header class="header">
+    <a href="/" class="back-link">← All languages</a>
+    <div class="header-row">
+      <h1 class="title">{lang.label}</h1>
+      <span class="version">{lang.version}</span>
+    </div>
+    <p class="subtitle">{totalModules} modules · Updated {lang.updatedAt}</p>
+  </header>
+
+  <main class="content">
+    {
+      lang.categories.map((cat: any) => (
+        <section class="category">
+          <h2 class="cat-name">
+            {cat.name}
+            <span class="cat-count">{cat.modules.length}</span>
+          </h2>
+          <ul class="module-grid">
+            {cat.modules.map((mod: any) => (
+              <li class="module-card">
+                <a href={mod.url} target="_blank" rel="noopener" class="module-link">{mod.name}</a>
+                <p class="module-desc">{mod.description}</p>
+                <span class="status" style={`background: ${statusColor[mod.status] || '#ccc'}`}>{mod.status}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </main>
+</Layout>
+
+<style>
+  .header {
+    border-bottom: 4px solid #000;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .back-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  .back-link:hover {
+    color: #000;
+  }
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+  .version {
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: #FFE600;
+    padding: 0.2rem 0.6rem;
+    border: 2px solid #000;
+    border-radius: 3px;
+  }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 0.25rem;
+  }
+  .content {
+    padding: 0 1.5rem 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .category {
+    margin-bottom: 2rem;
+  }
+  .cat-name {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .cat-count {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #888;
+    background: #f5f5f5;
+    border: 1.5px solid #000;
+    border-radius: 2px;
+    padding: 0.05rem 0.4rem;
+  }
+  .module-grid {
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  .module-card {
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .module-link {
+    font-weight: 800;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  .module-link:hover {
+    background: #FFE600;
+  }
+  .module-desc {
+    font-size: 0.75rem;
+    color: #555;
+    line-height: 1.3;
+    flex: 1;
+  }
+  .status {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.05rem 0.4rem;
+    border: 1.5px solid #000;
+    border-radius: 2px;
+    margin-top: 0.2rem;
+  }
+</style>
