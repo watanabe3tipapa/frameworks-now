@@ -1,16 +1,9 @@
 {
-  "name": "standard-libraries-now-crawler",
+  "name": "frameworks-now-crawler",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "crawl:nodejs": "node src/nodejs/index.js",
-    "crawl:python": "node src/python/index.js",
-    "crawl:rust": "node src/rust/index.js",
-    "crawl:go": "node src/go/index.js",
-    "crawl:tauri": "node src/tauri/index.js",
-    "crawl:all": "node src/nodejs/index.js && node src/python/index.js && node src/rust/index.js && node src/go/index.js && node src/tauri/index.js"
-  },
-  "dependencies": {
-    "cheerio": "^1.0.0"
+    "crawl:all": "node src/index.js"
   }
 }

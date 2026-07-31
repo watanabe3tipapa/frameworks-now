@@ -1,6 +1,6 @@
-# standard-libraries-now
+# frameworks-now
 
-Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を日次クロールし、静的サイトとして公開するツール。
+主要な Web フレームワーク（Astro, React, Django, Rails など 90 以上）を毎日クロールし、最新バージョン・スター数・ダウンロード数・リリース履歴を静的サイトとして公開するツール。
 
 ---
 
@@ -8,8 +8,9 @@ Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を日次ク�
 
 - GitHub Pages で公開
 - 日次（JST 午前5時）で WEB 巡回して最新情報を取得
-- 対象言語: Node.js, Python, Rust, Go, Tauri
-- デザイン: Neo Brutalism 基調
+- 対象: 主要フレームワーク 90+（フロントエンド / フルスタック / バックエンド / SSG / モバイル / デスクトップ / スタイリング）
+- 追跡メトリクス: 最新バージョン / リリース日 / GitHub スター数 / 週間ダウンロード数 / ライセンス / リリース履歴
+- デザイン: Neo Brutalism 基調（変更なし）
 
 ---
 
@@ -22,17 +23,17 @@ Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を日次ク�
 | デザイン       | プレーンCSS（Neo Brutalism カスタム） |
 | CI/CD          | GitHub Actions                        |
 | ホスティング   | GitHub Pages                          |
-| クローラー     | Node.js（全言語統一）                 |
+| クローラー     | Node.js（フレームワーク定義駆動）     |
 
 ### Astro を選んだ理由
 - コンテンツ駆動の静的サイト生成が得意（JSON を直接読める）
+- `getStaticPaths` でフレームワークごとの詳細ページを簡単に生成できる
 - バンドルサイズが小さく、Pages との相性が良い
-- 学習コストが低く、必要十分
 
 ### クローラーを Node.js に統一する理由
 - サイト生成と同じ言語でメンテナンスしやすい
-- cheerio で HTML スクレイピング、`child_process` で CLI ツール連携が可能
-- 全言語を同じ実装パターンで書ける
+- レジストリ API（npm / PyPI / crates.io / Packagist）と GitHub API を素直に呼べる
+- フレームワーク定義（config.js）を追加するだけで追跡対象を拡張できる
 
 ---
 
@@ -41,29 +42,28 @@ Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を日次ク�
 ```
                   クロール (GitHub Actions cron)
                   ┌─────────────────────────┐
-                  │  crawler/               │
-                  │  ├── nodejs/            │
-                  │  ├── python/            │
-                  │  ├── rust/              │
-                  │  ├── go/                │
-                  │  └── tauri/             │
+                  │  crawler/src/           │
+                  │  ├── config.js          │  ← フレームワーク定義（94件）
+                  │  ├── sources/           │
+                  │  │   ├── github.js      │  ← repo情報 + Releases/Tags
+                  │  │   ├── registry.js    │  ← npm / PyPI / crates / Packagist
+                  │  │   └── downloads.js   │  ← 週間DL（npm / PyPI）
+                  │  └── index.js           │  ← 並列実行・キャッシュフォールバック
                   └──────┬──────────────────┘
                          │ JSON出力
                          ▼
                   ┌─────────────────────────┐
                   │  data/                  │
-                  │  ├── nodejs.json        │
-                  │  ├── python.json        │
-                  │  ├── rust.json          │
-                  │  ├── go.json            │
-                  │  └── tauri.json         │
+                  │  ├── frameworks.json    │  ← 現在スナップショット
+                  │  └── releases.json      │  ← リリース履歴
                   └──────┬──────────────────┘
                          │ Astroがビルド時に読み込み
                          ▼
                   ┌─────────────────────────┐
                   │  site/ (Astro)          │
-                  │  src/pages/index.astro  │
-                  │  src/layouts/           │
+                  │  src/pages/index.astro  │  ← 一覧（フィルタ/ソート）
+                  │  src/pages/frameworks/  │  ← 詳細ページ [id]
+                  │  src/components/        │
                   │  src/lib/data.js        │
                   └──────┬──────────────────┘
                          │ astro build → dist/
@@ -75,72 +75,112 @@ Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を日次ク�
 
 ---
 
-## データソース
+## データモデル
 
-| 言語     | 取得元                                               |
-| -------- | ---------------------------------------------------- |
-| Node.js  | `https://nodejs.org/api/` サイドバーをスクレイピング |
-| Python   | `https://docs.python.org/3/py-modindex.html`         |
-| Rust     | `https://doc.rust-lang.org/std/`                     |
-| Go       | `go list std` コマンド出力                           |
-| Tauri    | `@tauri-apps/api` npm パッケージ                     |
+### data/frameworks.json（現在スナップショット）
 
-各JSONのスキーマ（共通）:
 ```json
 {
-  "language": "nodejs",
-  "label": "Node.js",
-  "version": "26.5.1",
-  "updatedAt": "2026-07-31T01:06:50.976Z",
-  "categories": [
-    {
-      "name": "File System",
-      "modules": [
-        {
-          "name": "fs",
-          "url": "https://nodejs.org/api/fs.html",
-          "description": "File system operations",
-          "status": "stable"
-        }
-      ]
-    }
-  ]
+  "id": "astro",
+  "name": "Astro",
+  "description": "The web framework for content-driven websites",
+  "category": "fullstack",
+  "language": "TypeScript",
+  "repo": "withastro/astro",
+  "homepage": "https://astro.build",
+  "package": { "manager": "npm", "name": "astro" },
+  "version": "5.18.2",
+  "releaseDate": "2026-07-15",
+  "stars": 51200,
+  "forks": 3900,
+  "openIssues": 800,
+  "weeklyDownloads": 350000,
+  "totalDownloads": 120000000,
+  "license": "MIT",
+  "lastCommit": "2026-07-30",
+  "updatedAt": "2026-07-31T01:06:50Z"
 }
 ```
+
+### data/releases.json（リリース履歴）
+
+```json
+[
+  {
+    "id": "astro",
+    "releases": [
+      { "version": "5.18.2", "date": "2026-07-15" },
+      { "version": "5.18.1", "date": "2026-07-08" }
+    ]
+  }
+]
+```
+
+### package 管理タイプ
+
+| manager | 意味                          | バージョン取得元 |
+| ------- | ----------------------------- | ---------------- |
+| `npm`   | npm パッケージ                | npm registry     |
+| `pypi`  | PyPI パッケージ               | PyPI JSON API    |
+| `crates`| crates.io クレート            | crates.io API    |
+| `gem`   | RubyGems パッケージ           | RubyGems API     |
+| `packagist` | Packagist パッケージ      | Packagist p2 API |
+| 無し    | レジストリ無し（GitHubのみ）  | GitHub Releases / Tags |
+
+---
+
+## データソース
+
+| 情報             | 取得元                                                       |
+| ---------------- | ------------------------------------------------------------ |
+| バージョン+履歴  | npm `registry.npmjs.org/<pkg>` / PyPI `pypi.org/pypi/<pkg>/json` / crates.io `api/v1/crates/<name>` / Packagist `repo.packagist.org/p2/<v>/<p>.json` / RubyGems `api.rubygems.org/api/v1/gems/<name>.json` |
+| バージョン       | GitHub Releases API → Tags API（レジストリを持たないもの）  |
+| スター/フォーク/issue/license/最終コミット | GitHub `repos/<owner>/<name>` |
+| 週間DL           | npm `api.npmjs.org/downloads/point/last-week/<pkg>` / PyPI `pypistats.org/api/packages/<pkg>/recent` / crates.io `downloads` |
+| ライセンス       | GitHub API またはレジストリの `license` フィールド           |
+
+### GitHub API レート制限対策
+
+- CI では `GITHUB_TOKEN`（1000回/h）を使用
+- ローカルでは認証済み `gh` CLI → 未認証リクエストの順にフォールバック
+- 取得失敗時は前回データ（`data/frameworks.json`）をキャッシュとして保持し、値の欠落を防止
 
 ---
 
 ## ディレクトリ構成
 
 ```
-standard-libraries-now/
+frameworks-now/
 ├── site/                    # Astro プロジェクト
 │   ├── src/
 │   │   ├── pages/
-│   │   │   ├── index.astro  # トップページ（全言語・全モジュールを展開表示）
+│   │   │   ├── index.astro          # 一覧ページ（フィルタ/ソート）
+│   │   │   ├── frameworks/[id].astro# フレームワーク詳細ページ
 │   │   │   └── 404.astro
+│   │   ├── components/
+│   │   │   ├── FrameworkCard.astro  # 一覧カード
+│   │   │   ├── StatsBar.astro       # 統計カード群
+│   │   │   └── ReleaseTable.astro   # リリース履歴表
 │   │   ├── layouts/
 │   │   │   └── Layout.astro
 │   │   └── lib/
-│   │       └── data.js      # data/*.json 読み込み
+│   │       └── data.js              # data/*.json 読み込み
 │   ├── public/
 │   │   └── favicon.svg
 │   ├── astro.config.mjs
 │   └── package.json
-├── crawler/                 # クローラー群
+├── crawler/                 # クローラー
 │   ├── src/
-│   │   ├── nodejs/
-│   │   ├── python/
-│   │   ├── rust/
-│   │   ├── go/
-│   │   └── tauri/
+│   │   ├── config.js        # フレームワーク定義
+│   │   ├── sources/
+│   │   │   ├── github.js
+│   │   │   ├── registry.js
+│   │   │   └── downloads.js
+│   │   └── index.js         # エントリーポイント
 │   └── package.json
 ├── data/                    # クロール結果のJSON（Git管理）
-│   ├── nodejs.json
-│   ├── python.json
-│   ├── rust.json
-│   ├── go.json
-│   └── tauri.json
+│   ├── frameworks.json
+│   └── releases.json
 ├── .github/workflows/
 │   └── crawl-and-deploy.yml
 ├── PLAN.md
@@ -149,7 +189,21 @@ standard-libraries-now/
 
 ---
 
-## デザイン（Neo Brutalism）
+## カテゴリ定義
+
+| id          | 表示名         | 例 |
+| ----------- | -------------- | --- |
+| `frontend`  | Frontend       | React, Vue, Svelte, Angular, Solid, Qwik |
+| `fullstack` | Full-stack     | Next.js, Nuxt, SvelteKit, Remix, Astro, Django, Rails, Laravel |
+| `backend`   | Backend        | Express, Fastify, FastAPI, Spring Boot, Gin, Axum, ASP.NET Core |
+| `static-site` | Static Site  | Docusaurus, VitePress, Eleventy, Hugo, Jekyll |
+| `mobile`    | Mobile         | React Native, Flutter, Ionic, Expo |
+| `desktop`   | Desktop        | Electron, Tauri, Wails, .NET MAUI |
+| `styling`   | Styling        | Tailwind CSS, Bootstrap, Material UI, shadcn/ui |
+
+---
+
+## デザイン（Neo Brutalism）※維持
 
 ### 基本ルール
 - 太い黒枠: `border: 3px solid #000`
@@ -160,9 +214,9 @@ standard-libraries-now/
 - カードはフラット、角丸は小さく（`border-radius: 4px`）
 
 ### UI構造
-- トップページに全言語・全モジュールを3階層の `<details>` / `<summary>` で展開表示
-- 言語カード → カテゴリ → モジュールカード（公式ドキュメントへのリンク）
-- JavaScript 不使用、HTML/CSS ネイティブ
+- **一覧ページ**: 統計ヘッダー → フィルタチップ（カテゴリ/言語） → ソート切替 → フレームワークカードグリッド
+- **詳細ページ**: ヒーロー（名前・バージョン・説明・リンク） → 統計カード（星/フォーク/週間DL/issue） → リリース履歴表
+- フィルタ・ソートはクエリパラメータ（`?category=` / `?sort=`）で実現し、JavaScript 不使用を維持
 
 ---
 
@@ -174,30 +228,12 @@ standard-libraries-now/
 
 ### ワークフロー
 1. `schedule` または `workflow_dispatch` で起動
-2. 各クローラーを実行 → `data/*.json` を更新
+2. `npm ci` → `node src/index.js` 実行 → `data/*.json` を更新
 3. `git commit & push`（更新があった場合のみ）
 4. `astro build` 実行 → `dist/` 生成
 5. `actions/upload-pages-artifact` + `actions/deploy-pages` でデプロイ
 
----
-
-## マイルストーン
-
-| Phase | 内容                                                  |
-| ----- | ----------------------------------------------------- |
-| 0     | PLAN.md 確定                                          |
-| 1     | Astro セットアップ + ダミーデータ表示 + Neo Brutalism |
-| 2     | Node.js クローラー実装（57 modules, 7 categories）    |
-| 3     | Python クローラー実装（312 modules, 23 categories）   |
-| 4     | データローダー作成 + 言語別ページ                      |
-| 5     | favicon + 404 ページ + デザイン統一                   |
-| 6     | GitHub Actions cron デプロイ設定                      |
-| 7     | Rust / Go / Tauri クローラー追加（計670 modules）     |
-| 8     | シングルページUIにリファクタリング（`<details>` ネスト）|
-
----
-
-## Actions バージョン管理
+### Actions バージョン
 
 | アクション                    | 採用バージョン |
 | ----------------------------- | -------------- |
@@ -209,8 +245,21 @@ standard-libraries-now/
 
 ---
 
+## マイルストーン
+
+| Phase | 内容 |
+| ----- | ---- |
+| 0     | リニューアルプラン確定 + `.md` 全面改訂 |
+| 1     | フレームワーク定義リスト作成（94件）+ データソース検証 |
+| 2     | クローラー実装（GitHub + 各レジストリ + 週間DL） |
+| 3     | `data/frameworks.json` / `releases.json` 生成 |
+| 4     | Astro サイト実装（一覧 + 詳細ページ、Neo Brutalism 維持） |
+| 5     | CI 更新 + GitHub Pages デプロイ確認 |
+
+---
+
 ## 注意事項
 
-- スクレイピング先への負荷を考慮し、最低限のリクエスト頻度にする
-- 各クローラーは独立して実行可能にし、途中の言語でエラーが出ても他に影響しない設計
+- 各 API への負荷を考慮し、並列実行数を制限しリクエスト頻度を抑える
+- 取得失敗時は前回データへフォールバックし、サイトが欠損表示にならないようにする
 - GitHub Pages のビルド制限（10分 / 月1000回）に収まるサイズに抑える
