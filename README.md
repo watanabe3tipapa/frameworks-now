@@ -1,104 +1,72 @@
+[![standard-libraries-now](assets/banner.svg)](https://github.com/watanabe3tipapa/standard-libraries-now)
+
+<!-- badges -->
+[![Deployment](https://img.shields.io/github/deployments/watanabe3tipapa/standard-libraries-now/github-pages)](https://github.com/watanabe3tipapa/standard-libraries-now/deployments)
+
+[English](README.md) | [日本語](README_ja.md)
+
 # standard-libraries-now
 
-Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を日次クロールし、静的サイトとして公開するツールです。
+A daily-updated index of standard libraries for Node.js, Python, Rust, Go, and Tauri. The data is crawled automatically every morning and published as a static site.
 
-<https://watanabe3tipapa.github.io/standard-libraries-now/>
+Live site: <https://watanabe3tipapa.github.io/standard-libraries-now/>
 
----
+## Features
 
-## 対象言語
+- **Daily crawling** — GitHub Actions runs at 5:00 JST and refreshes the library data automatically
+- **5 languages, 672 modules** — Node.js / Python / Rust / Go / Tauri
+- **Single-page drill-down UI** — expand language → category → module, built purely with native HTML `<details>` / `<summary>` (no JavaScript)
+- **Neo Brutalism design** — flat cards, thick black borders, and neon accents
 
-| 言語 | モジュール数 | バージョン |
-|------|------------|-----------|
-| Node.js | 57 | 26.5.1 |
-| Python | 312 | 3.14.6 |
-| Rust | 42 | 1.97.1 |
-| Go | 250 | 1.26.2 |
-| Tauri | 11 | 2.11.1 |
+## Screenshot
 
-全 672 モジュールをトップページの階層型UI（言語 → カテゴリ → モジュール）から参照できます。
+<!-- Add a screenshot here -->
+![Screenshot](https://watanabe3tipapa.github.io/standard-libraries-now/)
 
----
-
-## 技術スタック
-
-### フロントエンド
-
-| 技術 | 採用理由 |
-|------|---------|
-| [Astro](https://astro.build) | JSONデータを直接読み込んで静的なHTMLを生成。軽量で高速 |
-| CSS（プレーン） | フレームワークに依存しない。Neo Brutalism デザインを素のCSSで実装 |
-| `<details>` / `<summary>` | JavaScript を使用せずにアコーディオンUIを実現（アクセシビリティにも配慮） |
-
-### クローラー
-
-| 技術 | 採用理由 |
-|------|---------|
-| Node.js | サイト側と同じ言語で統一。メンテナンス性を重視 |
-| [cheerio](https://cheerio.js.org) | 軽量なHTMLパーサ。jQueryライクな記述でスクレイピングを実装 |
-| `child_process` | Goの標準ライブラリ一覧取得のため `go list std` を実行 |
-
-### CI/CD
-
-| 技術 | 採用理由 |
-|------|---------|
-| GitHub Actions | cron による日次実行と Pages デプロイを一貫して管理 |
-| GitHub Pages | 無料で利用可能。Actions との連携がスムーズ |
-
----
-
-## 処理フロー
-
-```
-毎日5:00 (JST) → クローラー起動 → data/*.json 更新 → Astro ビルド → GitHub Pages へデプロイ
-```
-
----
-
-## デザイン
-
-Neo Brutalism を採用しています。
-
-- 太い黒枠: `border: 3px solid #000`
-- アクセントカラー: 蛍光イエロー `#FFE600`、ピンク `#FF69B4`、シアン `#00E5FF`
-- フラットなカード、シャドウなし（hover 時のみ浮かせる）
-- 角丸は最小限に抑える
-
----
-
-## 実行方法
-
-ルートディレクトリから以下を実行できます。
+## Installation
 
 ```bash
-# 全行程（クロール → サイト生成）
+# Clone the repository
+git clone https://github.com/watanabe3tipapa/standard-libraries-now.git
+
+# Install crawler dependencies
+cd crawler
+npm install
+
+# Install site dependencies
+cd ../site
+npm install
+```
+
+## Usage
+
+From the repository root:
+
+```bash
+# Full pipeline (crawl + build)
 npm run run
 
-# クロールのみ
+# Crawl all languages only
 npm run crawl
 
-# サイト生成のみ
+# Build the static site only
 npm run build
 ```
 
-個別に実行する場合:
+## Contributing
 
-```bash
-cd crawler && npm run crawl:all   # 全言語のクロールを実行
-cd site && npm run build          # 静的サイトを生成
-```
+Contributions are welcome!
 
----
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## ディレクトリ構成
+## License
 
-```
-standard-libraries-now/
-├── site/               Astro プロジェクト（ページ・レイアウト）
-├── crawler/            クローラー（言語別に実装）
-├── data/               クロール結果の JSON
-├── .github/workflows/  GitHub Actions 設定
-├── package.json        ルート実行用スクリプト
-├── PLAN.md             設計書
-└── DEV-MEMO.md         実装履歴
-```
+License not yet specified.
+
+## Contact
+
+GitHub: [https://github.com/watanabe3tipapa/standard-libraries-now](https://github.com/watanabe3tipapa/standard-libraries-now)
