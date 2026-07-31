@@ -1,0 +1,9 @@
+{
+  "name": "standard-libraries-now",
+  "private": true,
+  "scripts": {
+    "crawl": "cd crawler && npm run crawl:all",
+    "build": "cd site && npm run build",
+    "run": "npm run crawl && npm run build"
+  }
+}
