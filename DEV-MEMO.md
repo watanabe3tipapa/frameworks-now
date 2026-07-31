@@ -53,6 +53,12 @@
 | Go   | 250 | 14 | 1.26.2 | go list std |
 | Tauri | 11 | 3 | 2.11.1 | @tauri-apps/api v2 |
 
-## Phase 4: サイトとデータのバインディング
+## Phase 8: シングルページ展開UIにリファクタリング ✅
 
-- TBD
+- `[language]/` 動的ルートを削除し、全言語のデータをトップページに統合 ✅
+- HTML ネイティブの `<details>` / `<summary>` 要素でネスト型アコーディオンを実現 ✅
+  - 言語カード → カテゴリ → モジュールカード の3階層
+  - JavaScript ゼロ、HTML/CSS のみで動作
+- モジュールカードは公式ドキュメントへの外部リンク (`target="_blank"`) ✅
+- デザイン: Neo Brutalism 維持、`:hover` で蛍光色 `#FFE600`、`details[open]` で背景変化 ✅
+- 全672モジュールを1ページに静的生成 ✅
