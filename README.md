@@ -1,8 +1,8 @@
-# 📦 standard-libraries-now
+# standard-libraries-now
 
-主要言語の標準ライブラリを**毎日クロール**して一覧にしてくれるやつ。
+Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を日次クロールし、静的サイトとして公開するツールです。
 
-> 🌐 https://watanabe3tipapa.github.io/standard-libraries-now/
+<https://watanabe3tipapa.github.io/standard-libraries-now/>
 
 ---
 
@@ -16,71 +16,89 @@
 | Go | 250 | 1.26.2 |
 | Tauri | 11 | 2.11.1 |
 
-**合計 672 モジュール** を1ページでドリルダウン表示。
+全 672 モジュールをトップページの階層型UI（言語 → カテゴリ → モジュール）から参照できます。
 
 ---
 
-## 使ってるもの
+## 技術スタック
 
 ### フロントエンド
 
-| これ | なんで |
-|------|--------|
-| [Astro](https://astro.build) | 静的サイト生成。JSONからページを作るのが得意 |
-| プレーンCSS | Tailwindとか使わず生で書いてる。Neo Brutalismなんでシンプルが正義 |
-| `<details>` / `<summary>` | アコーディオンUIを実現。**JSゼロ**で動くのがポイント |
+| 技術 | 採用理由 |
+|------|---------|
+| [Astro](https://astro.build) | JSONデータを直接読み込んで静的なHTMLを生成。軽量で高速 |
+| CSS（プレーン） | フレームワークに依存しない。Neo Brutalism デザインを素のCSSで実装 |
+| `<details>` / `<summary>` | JavaScript を使用せずにアコーディオンUIを実現（アクセシビリティにも配慮） |
 
 ### クローラー
 
-| これ | なんで |
-|------|--------|
-| Node.js | サイトもNode.jsなんで統一。言語切り替えなくて済む |
-| [cheerio](https://cheerio.js.org) | jQueryライクにHTMLをパース。軽いし直感的 |
-| `child_process` | Goだけ `go list std` 叩いてるのでそのために |
+| 技術 | 採用理由 |
+|------|---------|
+| Node.js | サイト側と同じ言語で統一。メンテナンス性を重視 |
+| [cheerio](https://cheerio.js.org) | 軽量なHTMLパーサ。jQueryライクな記述でスクレイピングを実装 |
+| `child_process` | Goの標準ライブラリ一覧取得のため `go list std` を実行 |
 
 ### CI/CD
 
-| これ | なんで |
-|------|--------|
-| GitHub Actions | cronで毎日クロール → コミット → デプロイ まで一気通貫 |
-| GitHub Pages | 無料。Actionsから直接デプロイできる |
+| 技術 | 採用理由 |
+|------|---------|
+| GitHub Actions | cron による日次実行と Pages デプロイを一貫して管理 |
+| GitHub Pages | 無料で利用可能。Actions との連携がスムーズ |
 
-### フロー
+---
+
+## 処理フロー
 
 ```
-毎朝5時 (JST) ─→ クローラー起動 ─→ data/*.json 更新 ─→ Astroビルド ─→ GitHub Pages 公開
-                                                        ↕
-                                              全部トップページに
-                                              3階層で展開表示
+毎日5:00 (JST) → クローラー起動 → data/*.json 更新 → Astro ビルド → GitHub Pages へデプロイ
 ```
 
 ---
 
-## デザインの話
+## デザイン
 
-**Neo Brutalism** ってやつ。
+Neo Brutalism を採用しています。
 
-- 太い黒枠 (`border: 3px solid #000`)
-- 蛍光色アクセント (`#FFE600`, `#FF69B4`, `#00E5FF`)
-- フラットなカード、シャドウなし（hover時だけ浮かせる）
-- ダサかっこいいを目指した
+- 太い黒枠: `border: 3px solid #000`
+- アクセントカラー: 蛍光イエロー `#FFE600`、ピンク `#FF69B4`、シアン `#00E5FF`
+- フラットなカード、シャドウなし（hover 時のみ浮かせる）
+- 角丸は最小限に抑える
 
 ---
 
-## 動かし方
+## 実行方法
 
-ルートから一発:
+ルートディレクトリから以下を実行できます。
 
 ```bash
-npm run run     # 強制フル実行（クロール → ビルド）
-npm run crawl   # クロールだけ
-npm run build   # ビルドだけ
+# 全行程（クロール → サイト生成）
+npm run run
+
+# クロールのみ
+npm run crawl
+
+# サイト生成のみ
+npm run build
 ```
 
-中身を追うなら:
+個別に実行する場合:
 
 ```bash
-cd crawler && npm run crawl:all   # 全言語クロール
-cd site && npm run build          # サイト生成
-open site/dist/index.html         # 開く
+cd crawler && npm run crawl:all   # 全言語のクロールを実行
+cd site && npm run build          # 静的サイトを生成
+```
+
+---
+
+## ディレクトリ構成
+
+```
+standard-libraries-now/
+├── site/               Astro プロジェクト（ページ・レイアウト）
+├── crawler/            クローラー（言語別に実装）
+├── data/               クロール結果の JSON
+├── .github/workflows/  GitHub Actions 設定
+├── package.json        ルート実行用スクリプト
+├── PLAN.md             設計書
+└── DEV-MEMO.md         実装履歴
 ```
