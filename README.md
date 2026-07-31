@@ -20,8 +20,7 @@ Live site: <https://watanabe3tipapa.github.io/standard-libraries-now/>
 
 ## Screenshot
 
-<!-- Add a screenshot here -->
-![Screenshot](https://watanabe3tipapa.github.io/standard-libraries-now/)
+![Screenshot](assets/IMGSS.jpg)
 
 ## Installation
 

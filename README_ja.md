@@ -20,8 +20,7 @@ Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を毎日自�
 
 ## スクリーンショット
 
-<!-- スクリーンショットをここに追加 -->
-![スクリーンショット](https://watanabe3tipapa.github.io/standard-libraries-now/)
+![スクリーンショット](assets/IMGSS.jpg)
 
 ## インストール
 
