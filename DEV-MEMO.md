@@ -71,6 +71,12 @@
 - `actions/deploy-pages@v4` → `v5`
 - `workflow_dispatch` で動作確認済み、警告消失
 
+## 追録: Go バージョンのCI固定 ✅
+
+- 問題: `go version` / `go list std` が実行マシンのGoに依存し、ローカル(1.26.2/250) と GitHub Actions ランナー(1.24.13/239) でデータが不一致
+- 対応: `actions/setup-go@v5` で `go-version: '1.26.2'` を固定
+- 以後、ローカルとCIで同じデータが生成される
+
 ## 本番URL
 
 <https://watanabe3tipapa.github.io/standard-libraries-now/>
