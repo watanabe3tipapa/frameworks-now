@@ -14,7 +14,7 @@ Node.js / Python / Rust / Go / Tauri の標準ライブラリ一覧を毎日自�
 ## 特徴
 
 - **毎日自動クロール** — GitHub Actions が JST 5:00 に起動し、ライブラリデータを自動更新します
-- **5言語・672モジュール** — Node.js / Python / Rust / Go / Tauri
+- **5言語・670モジュール** — Node.js / Python / Rust / Go / Tauri
 - **シングルページのドリルダウンUI** — 言語 → カテゴリ → モジュールの順に展開。ネイティブHTML（`<details>` / `<summary>`）のみで実装し、JavaScriptは使用しません
 - **Neo Brutalism デザイン** — フラットなカード、太い黒枠、蛍光アクセントカラー
 

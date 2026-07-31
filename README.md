@@ -14,7 +14,7 @@ Live site: <https://watanabe3tipapa.github.io/standard-libraries-now/>
 ## Features
 
 - **Daily crawling** — GitHub Actions runs at 5:00 JST and refreshes the library data automatically
-- **5 languages, 672 modules** — Node.js / Python / Rust / Go / Tauri
+- **5 languages, 670 modules** — Node.js / Python / Rust / Go / Tauri
 - **Single-page drill-down UI** — expand language → category → module, built purely with native HTML `<details>` / `<summary>` (no JavaScript)
 - **Neo Brutalism design** — flat cards, thick black borders, and neon accents
 

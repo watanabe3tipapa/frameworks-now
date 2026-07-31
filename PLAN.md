@@ -192,7 +192,7 @@ standard-libraries-now/
 | 4     | データローダー作成 + 言語別ページ                      |
 | 5     | favicon + 404 ページ + デザイン統一                   |
 | 6     | GitHub Actions cron デプロイ設定                      |
-| 7     | Rust / Go / Tauri クローラー追加（計672 modules）     |
+| 7     | Rust / Go / Tauri クローラー追加（計670 modules）     |
 | 8     | シングルページUIにリファクタリング（`<details>` ネスト）|
 
 ---

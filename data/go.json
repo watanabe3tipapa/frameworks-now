@@ -2,7 +2,7 @@
   "language": "go",
   "label": "Go",
   "version": "1.26.2",
-  "updatedAt": "2026-07-31T01:43:43.752Z",
+  "updatedAt": "2026-07-31T01:47:42.756Z",
   "categories": [
     {
       "name": "Data Encoding & Compression",
@@ -1174,12 +1174,6 @@
           "name": "runtime",
           "url": "https://pkg.go.dev/runtime@go1.26.2",
           "description": "Package runtime",
-          "status": "stable"
-        },
-        {
-          "name": "cgo",
-          "url": "https://pkg.go.dev/runtime/cgo@go1.26.2",
-          "description": "Package runtime/cgo",
           "status": "stable"
         },
         {

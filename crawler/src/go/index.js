@@ -41,7 +41,10 @@ async function fetchGoStdVersion() {
 
 async function fetchGoPackages() {
   try {
-    const out = execSync('go list std', { encoding: 'utf-8' })
+    const out = execSync('go list std', {
+      encoding: 'utf-8',
+      env: { ...process.env, GOOS: 'linux', GOARCH: 'amd64', CGO_ENABLED: '0' },
+    })
     return out.trim().split('\n').filter(Boolean)
   } catch {
     return []
