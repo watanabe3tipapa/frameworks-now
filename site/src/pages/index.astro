@@ -1,73 +1,152 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { loadAllLanguages } from '../lib/data'
+import FrameworkCard from '../components/FrameworkCard.astro'
+import { loadFrameworks } from '../lib/data'
+import { fmtDateTime } from '../lib/format'
 
-const languages = loadAllLanguages()
-languages.sort((a, b) => a.label.localeCompare(b.label))
+const data = loadFrameworks()
+const frameworks = data.frameworks
 
-const statusColor: Record<string, string> = {
-  stable: '#00E5FF',
-  experimental: '#FFE600',
-  deprecated: '#FF69B4',
-}
+const CATEGORIES = [
+  ['frontend', 'Frontend'],
+  ['fullstack', 'Full-stack'],
+  ['backend', 'Backend'],
+  ['static-site', 'Static Site'],
+  ['mobile', 'Mobile'],
+  ['desktop', 'Desktop'],
+  ['styling', 'Styling'],
+]
+
+const languages = [...new Set(frameworks.map((f) => f.language).filter(Boolean))].sort((a, b) =>
+  a.localeCompare(b),
+)
+
+const SORTS = [
+  ['name', 'Name'],
+  ['stars', 'Stars'],
+  ['downloads', 'Downloads'],
+  ['version', 'Version'],
+]
+
+const sortedByName = [...frameworks].sort((a, b) => a.name.localeCompare(b.name))
 ---
 
-<Layout title="standard-libraries-now">
+<Layout title="frameworks-now">
   <header class="header">
-    <h1 class="title">standard-libraries-now</h1>
-    <p class="subtitle">Tracking standard libraries across languages</p>
+    <h1 class="title">frameworks-now</h1>
+    <p class="subtitle">Tracking web frameworks across languages</p>
   </header>
 
   <main class="content">
-    {
-      languages.map((lang) => {
-        const totalModules = lang.categories.reduce((a: number, c: any) => a + c.modules.length, 0)
-        return (
-          <details class="lang-card">
-            <summary class="lang-summary">
-              <div class="card-header">
-                <h2 class="lang-name">{lang.label}</h2>
-                <span class="version">{lang.version}</span>
-              </div>
-              <p class="stats">{totalModules} modules in {lang.categories.length} categories</p>
-              <div class="category-list">
-                {lang.categories.map((cat: any) => (
-                  <span class="cat-tag">{cat.name}</span>
-                ))}
-              </div>
-            </summary>
-            <div class="lang-body">
-              {lang.categories.map((cat: any) => (
-                <details class="cat-details">
-                  <summary class="cat-summary">
-                    <span class="cat-name">{cat.name}</span>
-                    <span class="cat-count">{cat.modules.length}</span>
-                  </summary>
-                  <div class="module-grid">
-                    {cat.modules.map((mod: any) => (
-                      <a href={mod.url} target="_blank" rel="noopener" class="module-card">
-                        <span class="module-name">{mod.name}</span>
-                        <span class="module-desc">{mod.description}</span>
-                        <span class="status" style={`background: ${statusColor[mod.status] || '#ccc'}`}>{mod.status}</span>
-                      </a>
-                    ))}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </details>
-        )
-      })
-    }
+    <section class="stats-bar">
+      <div class="stat-chip">
+        <span class="stat-num">{frameworks.length}</span>
+        <span class="stat-label">Frameworks</span>
+      </div>
+      {
+        CATEGORIES.map(([id, label]) => (
+          <a class="stat-chip" data-cat={id} href={`?category=${id}`}>
+            <span class="stat-num">{frameworks.filter((f) => f.category === id).length}</span>
+            <span class="stat-label">{label}</span>
+          </a>
+        ))
+      }
+      <div class="updated">
+        Updated: {fmtDateTime(data.updatedAt)}
+      </div>
+    </section>
+
+    <section class="filters">
+      <div class="filter-group">
+        <span class="filter-label">Language:</span>
+        <a class="chip active" data-lang="" href="?">All</a>
+        {
+          languages.map((l) => (
+            <a class="chip" data-lang={l} href={`?lang=${encodeURIComponent(l)}`}>{l}</a>
+          ))
+        }
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Sort:</span>
+        {
+          SORTS.map(([id, label]) => (
+            <a class={`chip ${id === 'name' ? 'active' : ''}`} data-sort={id} href={`?sort=${id}`}>
+              {label}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <p class="result-count">{frameworks.length} frameworks</p>
+
+    <section class="grid" id="grid">
+      {
+        sortedByName.map((fw) => (
+          <FrameworkCard framework={fw} />
+        ))
+      }
+    </section>
   </main>
 </Layout>
+
+<script>
+  const params = new URLSearchParams(location.search)
+  const category = params.get('category') || ''
+  const lang = params.get('lang') || ''
+  const sort = params.get('sort') || 'name'
+
+  const cards = [...document.querySelectorAll('.card')]
+  const grid = document.getElementById('grid')
+
+  function matches(card) {
+    if (category && card.dataset.category !== category) return false
+    if (lang && card.dataset.lang !== lang) return false
+    return true
+  }
+
+  const visible = cards.filter(matches)
+  visible.forEach((c) => {
+    c.hidden = false
+  })
+  cards.forEach((c) => {
+    if (!visible.includes(c)) c.hidden = true
+  })
+
+  function sortKey(card) {
+    if (sort === 'stars') return -Number(card.dataset.stars || 0)
+    if (sort === 'downloads') return -Number(card.dataset.downloads || 0)
+    if (sort === 'version') return card.dataset.version || ''
+    return card.dataset.name || ''
+  }
+
+  visible.sort((a, b) => {
+    const ka = sortKey(a)
+    const kb = sortKey(b)
+    if (typeof ka === 'number' && typeof kb === 'number') return ka - kb
+    return String(ka).localeCompare(String(kb), undefined, { numeric: true })
+  })
+  visible.forEach((c) => grid.appendChild(c))
+
+  document.querySelector('.result-count').textContent = `${visible.length} frameworks`
+
+  document.querySelectorAll('.stat-chip[data-cat]').forEach((el) => {
+    el.classList.toggle('active', el.dataset.cat === category)
+  })
+  document.querySelectorAll('.chip[data-lang]').forEach((el) => {
+    el.classList.toggle('active', el.dataset.lang === lang)
+  })
+  document.querySelectorAll('.chip[data-sort]').forEach((el) => {
+    el.classList.toggle('active', el.dataset.sort === sort)
+  })
+</script>
 
 <style>
   .header {
     text-align: center;
     border-bottom: 4px solid #000;
     padding: 2rem 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .title {
     font-size: 2.5rem;
@@ -82,161 +161,108 @@ const statusColor: Record<string, string> = {
   }
   .content {
     padding: 0 1.5rem 3rem;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
-  .lang-card {
+  .stats-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 0.7rem;
     border: 3px solid #000;
     border-radius: 4px;
     background: #fff;
-    list-style: none;
+    padding: 0.9rem;
   }
-  .lang-card[open] {
-    background: #fafafa;
-  }
-  .lang-summary {
-    display: block;
-    padding: 1.5rem;
-    cursor: pointer;
-    list-style: none;
-  }
-  .lang-summary::-webkit-details-marker {
-    display: none;
-  }
-  .lang-summary:hover {
-    background: #f5f5f5;
-  }
-  .lang-card[open] .lang-summary {
-    border-bottom: 2px solid #000;
-    background: #f5f5f5;
-  }
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.5rem;
-  }
-  .lang-name {
-    font-size: 1.5rem;
-    font-weight: 900;
-  }
-  .version {
-    font-size: 0.85rem;
-    font-weight: 700;
-    background: #FFE600;
-    padding: 0.15rem 0.5rem;
-    border: 2px solid #000;
-    border-radius: 3px;
-  }
-  .stats {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 0.75rem;
-  }
-  .category-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
-  .cat-tag {
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 0.15rem 0.45rem;
-    border: 1.5px solid #000;
-    border-radius: 2px;
-    background: #f5f5f5;
-  }
-  .lang-body {
-    padding: 1.25rem 1.5rem;
+  .stat-chip {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-  }
-  .cat-details {
-    border: 2px solid #000;
-    border-radius: 3px;
-    background: #fff;
-    list-style: none;
-  }
-  .cat-details[open] {
-    background: #fff;
-  }
-  .cat-summary {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.6rem 0.9rem;
-    cursor: pointer;
-    list-style: none;
-    font-size: 0.95rem;
-    font-weight: 800;
-  }
-  .cat-summary::-webkit-details-marker {
-    display: none;
-  }
-  .cat-summary:hover {
-    background: #f5f5f5;
-  }
-  .cat-details[open] .cat-summary {
-    border-bottom: 2px solid #000;
-    background: #f5f5f5;
-  }
-  .cat-name {
-    font-size: 0.95rem;
-    font-weight: 800;
-  }
-  .cat-count {
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: #888;
-    background: #f5f5f5;
-    border: 1.5px solid #000;
-    border-radius: 2px;
-    padding: 0.05rem 0.4rem;
-  }
-  .module-grid {
-    display: grid;
-    gap: 0.6rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    padding: 0.75rem;
-  }
-  .module-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.05rem;
     border: 2px solid #000;
     border-radius: 3px;
-    padding: 0.6rem;
+    padding: 0.4rem 0.9rem;
+    background: #f5f5f5;
     color: #000;
     text-decoration: none;
     transition: transform 0.1s;
   }
-  .module-card:hover {
+  .stat-chip:hover {
     transform: translate(-1px, -1px);
     box-shadow: 3px 3px 0 #000;
+  }
+  .stat-chip.active {
     background: #FFE600;
   }
-  .module-name {
-    font-weight: 800;
-    font-size: 0.9rem;
-    font-family: monospace;
+  .stat-num {
+    font-size: 1.1rem;
+    font-weight: 900;
   }
-  .module-desc {
-    font-size: 0.7rem;
-    color: #555;
-    line-height: 1.3;
-  }
-  .status {
-    display: inline-block;
-    align-self: flex-start;
-    font-size: 0.6rem;
+  .stat-label {
+    font-size: 0.65rem;
     font-weight: 700;
-    padding: 0.05rem 0.35rem;
-    border: 1.5px solid #000;
+    text-transform: uppercase;
+    color: #555;
+  }
+  .updated {
+    margin-left: auto;
+    align-self: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #555;
+    padding: 0.3rem 0.6rem;
+    border: 2px solid #000;
+    border-radius: 3px;
+    background: #00E5FF;
+  }
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .filter-label {
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #555;
+    margin-right: 0.2rem;
+  }
+  .chip {
+    font-size: 0.72rem;
+    font-weight: 700;
+    border: 2px solid #000;
     border-radius: 2px;
-    margin-top: 0.15rem;
+    padding: 0.15rem 0.55rem;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.1s;
+  }
+  .chip:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 2px 2px 0 #000;
+  }
+  .chip.active {
+    background: #FF69B4;
+    color: #fff;
+  }
+  .result-count {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #555;
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
 </style>

@@ -1,0 +1,100 @@
+---
+import { fmtNumber, fmtDate } from '../lib/format'
+
+interface Props {
+  framework: {
+    stars: number
+    forks: number
+    openIssues: number
+    weeklyDownloads: number
+    totalDownloads: number
+    license: string
+    lastCommit: string
+    releaseDate: string
+  }
+}
+
+const { framework: fw } = Astro.props
+
+const stats = [
+  { label: 'Stars', value: fmtNumber(fw.stars), icon: '⭐', color: '#FFE600' },
+  { label: 'Forks', value: fmtNumber(fw.forks), icon: '⑂', color: '#00E5FF' },
+  { label: 'Weekly DL', value: fmtNumber(fw.weeklyDownloads), icon: '⬇', color: '#FF69B4' },
+  { label: 'Total DL', value: fmtNumber(fw.totalDownloads), icon: '∑', color: '#FFE600' },
+  { label: 'Open Issues', value: fmtNumber(fw.openIssues), icon: '◉', color: '#00E5FF' },
+  { label: 'License', value: fw.license || '—', icon: '©', color: '#FF69B4' },
+]
+---
+
+<div class="stats">
+  {
+    stats.map((s) => (
+      <div class="stat">
+        <span class="stat-icon" style={`background: ${s.color}`}>{s.icon}</span>
+        <div class="stat-body">
+          <span class="stat-value">{s.value}</span>
+          <span class="stat-label">{s.label}</span>
+        </div>
+      </div>
+    ))
+  }
+  <div class="stat">
+    <span class="stat-icon" style="background:#FFE600">⟳</span>
+    <div class="stat-body">
+      <span class="stat-value">{fmtDate(fw.releaseDate)}</span>
+      <span class="stat-label">Last Release</span>
+    </div>
+  </div>
+  <div class="stat">
+    <span class="stat-icon" style="background:#00E5FF">⚑</span>
+    <div class="stat-body">
+      <span class="stat-value">{fmtDate(fw.lastCommit)}</span>
+      <span class="stat-label">Last Commit</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.9rem;
+  }
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 3px solid #000;
+    border-radius: 4px;
+    background: #fff;
+    padding: 0.7rem 0.8rem;
+  }
+  .stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 2px solid #000;
+    border-radius: 3px;
+  }
+  .stat-body {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .stat-value {
+    font-size: 0.95rem;
+    font-weight: 900;
+    white-space: nowrap;
+  }
+  .stat-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555;
+  }
+</style>

@@ -5043,6 +5043,10 @@
     "id": "hono",
     "releases": [
       {
+        "version": "4.12.33",
+        "date": "2026-07-31"
+      },
+      {
         "version": "4.12.32",
         "date": "2026-07-24"
       },
@@ -5157,10 +5161,6 @@
       {
         "version": "4.12.4",
         "date": "2026-03-03"
-      },
-      {
-        "version": "4.12.3",
-        "date": "2026-02-26"
       }
     ]
   },
@@ -5169,152 +5169,152 @@
     "releases": [
       {
         "version": "0.164.0",
-        "date": null,
+        "date": "2026-07-06",
         "prerelease": false
       },
       {
         "version": "0.163.3",
-        "date": null,
+        "date": "2026-06-18",
         "prerelease": false
       },
       {
         "version": "0.163.2",
-        "date": null,
+        "date": "2026-06-15",
         "prerelease": false
       },
       {
         "version": "0.163.1",
-        "date": null,
+        "date": "2026-06-11",
         "prerelease": false
       },
       {
         "version": "0.163.0",
-        "date": null,
+        "date": "2026-06-08",
         "prerelease": false
       },
       {
         "version": "0.162.1",
-        "date": null,
+        "date": "2026-05-28",
         "prerelease": false
       },
       {
         "version": "0.162.0",
-        "date": null,
+        "date": "2026-05-26",
         "prerelease": false
       },
       {
         "version": "0.161.1",
-        "date": null,
+        "date": "2026-04-29",
         "prerelease": false
       },
       {
         "version": "0.161.0",
-        "date": null,
+        "date": "2026-04-28",
         "prerelease": false
       },
       {
         "version": "0.160.1",
-        "date": null,
+        "date": "2026-04-08",
         "prerelease": false
       },
       {
         "version": "0.160.0",
-        "date": null,
+        "date": "2026-04-04",
         "prerelease": false
       },
       {
         "version": "0.159.2",
-        "date": null,
+        "date": "2026-04-01",
         "prerelease": false
       },
       {
         "version": "0.159.1",
-        "date": null,
+        "date": "2026-03-26",
         "prerelease": false
       },
       {
         "version": "0.159.0",
-        "date": null,
+        "date": "2026-03-23",
         "prerelease": false
       },
       {
         "version": "0.158.0",
-        "date": null,
+        "date": "2026-03-16",
         "prerelease": false
       },
       {
         "version": "0.157.0",
-        "date": null,
+        "date": "2026-02-25",
         "prerelease": false
       },
       {
         "version": "0.156.0",
-        "date": null,
+        "date": "2026-02-18",
         "prerelease": false
       },
       {
         "version": "0.155.3",
-        "date": null,
+        "date": "2026-02-08",
         "prerelease": false
       },
       {
         "version": "0.155.2",
-        "date": null,
+        "date": "2026-02-02",
         "prerelease": false
       },
       {
         "version": "0.155.1",
-        "date": null,
+        "date": "2026-01-30",
         "prerelease": false
       },
       {
         "version": "0.155.0",
-        "date": null,
+        "date": "2026-01-28",
         "prerelease": false
       },
       {
         "version": "0.154.5",
-        "date": null,
+        "date": "2026-01-11",
         "prerelease": false
       },
       {
         "version": "0.154.4",
-        "date": null,
+        "date": "2026-01-10",
         "prerelease": false
       },
       {
         "version": "0.154.3",
-        "date": null,
+        "date": "2026-01-06",
         "prerelease": false
       },
       {
         "version": "0.154.2",
-        "date": null,
+        "date": "2026-01-02",
         "prerelease": false
       },
       {
         "version": "0.154.1",
-        "date": null,
+        "date": "2026-01-01",
         "prerelease": false
       },
       {
         "version": "0.154.0",
-        "date": null,
+        "date": "2025-12-31",
         "prerelease": false
       },
       {
         "version": "0.153.5",
-        "date": null,
+        "date": "2025-12-30",
         "prerelease": false
       },
       {
         "version": "0.153.4",
-        "date": null,
+        "date": "2025-12-28",
         "prerelease": false
       },
       {
         "version": "0.153.3",
-        "date": null,
+        "date": "2025-12-26",
         "prerelease": false
       }
     ]
@@ -5322,6 +5322,14 @@
   {
     "id": "ionic",
     "releases": [
+      {
+        "version": "8.8.14-dev.11785507167.1f41b13b",
+        "date": "2026-07-31"
+      },
+      {
+        "version": "8.8.17-nightly.20260731",
+        "date": "2026-07-31"
+      },
       {
         "version": "8.8.14-dev.11785447127.1dbdd22e",
         "date": "2026-07-30"
@@ -5433,14 +5441,6 @@
       {
         "version": "8.8.14-nightly.20260715",
         "date": "2026-07-15"
-      },
-      {
-        "version": "8.8.14-dev.11784037956.17449639",
-        "date": "2026-07-14"
-      },
-      {
-        "version": "8.8.14-nightly.20260714",
-        "date": "2026-07-14"
       }
     ]
   },
@@ -6883,6 +6883,10 @@
     "id": "nextjs",
     "releases": [
       {
+        "version": "16.3.0-canary.105",
+        "date": "2026-08-01"
+      },
+      {
         "version": "16.3.0-canary.104",
         "date": "2026-07-30"
       },
@@ -6997,10 +7001,6 @@
       {
         "version": "16.3.0-canary.84",
         "date": "2026-07-12"
-      },
-      {
-        "version": "16.3.0-canary.83",
-        "date": "2026-07-10"
       }
     ]
   },
@@ -7133,6 +7133,10 @@
     "id": "phalcon",
     "releases": [
       {
+        "version": "5.18.0",
+        "date": "2026-07-31"
+      },
+      {
         "version": "5.17.0",
         "date": "2026-07-17"
       },
@@ -7247,10 +7251,6 @@
       {
         "version": "5.2.0",
         "date": "2023-02-27"
-      },
-      {
-        "version": "5.1.4",
-        "date": "2023-01-10"
       }
     ]
   },
@@ -7538,6 +7538,10 @@
     "id": "preact",
     "releases": [
       {
+        "version": "10.29.8",
+        "date": "2026-08-01"
+      },
+      {
         "version": "11.0.0-beta.2",
         "date": "2026-07-15"
       },
@@ -7651,10 +7655,6 @@
       },
       {
         "version": "10.26.2",
-        "date": "2025-02-18"
-      },
-      {
-        "version": "10.26.1",
         "date": "2025-02-18"
       }
     ]
@@ -8068,6 +8068,14 @@
     "id": "react",
     "releases": [
       {
+        "version": "0.0.0-experimental-cbb046ab-20260731",
+        "date": "2026-07-31"
+      },
+      {
+        "version": "19.3.0-canary-cbb046ab-20260731",
+        "date": "2026-07-31"
+      },
+      {
         "version": "0.0.0-experimental-0f42eac2-20260730",
         "date": "2026-07-30"
       },
@@ -8178,20 +8186,16 @@
       {
         "version": "0.0.0-experimental-7023f501-20260714",
         "date": "2026-07-14"
-      },
-      {
-        "version": "19.3.0-canary-7023f501-20260714",
-        "date": "2026-07-14"
-      },
-      {
-        "version": "0.0.0-experimental-c0c39a6b-20260709",
-        "date": "2026-07-10"
       }
     ]
   },
   {
     "id": "react-native",
     "releases": [
+      {
+        "version": "0.88.0-nightly-20260801-c7d62a125",
+        "date": "2026-08-01"
+      },
       {
         "version": "0.88.0-nightly-20260730-8e7446412",
         "date": "2026-07-30"
@@ -8307,10 +8311,6 @@
       {
         "version": "0.87.0-nightly-20260707-b67b7ba62",
         "date": "2026-07-07"
-      },
-      {
-        "version": "0.87.0-nightly-20260706-e04ff69ab",
-        "date": "2026-07-06"
       }
     ]
   },
@@ -9318,6 +9318,10 @@
     "id": "shadcn",
     "releases": [
       {
+        "version": "4.16.1",
+        "date": "2026-07-31"
+      },
+      {
         "version": "4.16.0",
         "date": "2026-07-27"
       },
@@ -9432,10 +9436,6 @@
       {
         "version": "4.5.0",
         "date": "2026-04-25"
-      },
-      {
-        "version": "4.4.0",
-        "date": "2026-04-21"
       }
     ]
   },
@@ -10598,6 +10598,22 @@
     "id": "tailwind",
     "releases": [
       {
+        "version": "0.0.0-insiders.4be6110",
+        "date": "2026-07-31"
+      },
+      {
+        "version": "0.0.0-insiders.d494a78",
+        "date": "2026-07-31"
+      },
+      {
+        "version": "0.0.0-insiders.423aee5",
+        "date": "2026-07-31"
+      },
+      {
+        "version": "0.0.0-insiders.f6b7c58",
+        "date": "2026-07-31"
+      },
+      {
         "version": "0.0.0-insiders.6de87c6",
         "date": "2026-07-28"
       },
@@ -10700,22 +10716,6 @@
       {
         "version": "0.0.0-insiders.94f7907",
         "date": "2026-06-25"
-      },
-      {
-        "version": "0.0.0-insiders.38652a4",
-        "date": "2026-06-25"
-      },
-      {
-        "version": "0.0.0-insiders.7ff413b",
-        "date": "2026-06-25"
-      },
-      {
-        "version": "0.0.0-insiders.bb6a109",
-        "date": "2026-06-25"
-      },
-      {
-        "version": "0.0.0-insiders.d5ca0ae",
-        "date": "2026-06-22"
       }
     ]
   },
@@ -11487,6 +11487,16 @@
     "id": "wails",
     "releases": [
       {
+        "version": "3.0.0-alpha2.121",
+        "date": "2026-07-31",
+        "prerelease": true
+      },
+      {
+        "version": "3.0.0-alpha2.120",
+        "date": "2026-07-31",
+        "prerelease": true
+      },
+      {
         "version": "3.0.0-alpha2.119",
         "date": "2026-07-27",
         "prerelease": true
@@ -11624,16 +11634,6 @@
       {
         "version": "3.0.0-alpha.95",
         "date": "2026-05-20",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-alpha.94",
-        "date": "2026-05-19",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-alpha.93",
-        "date": "2026-05-17",
         "prerelease": true
       }
     ]

@@ -1,0 +1,102 @@
+---
+import { fmtDate } from '../lib/format'
+
+interface Props {
+  releases: {
+    version: string
+    date: string
+    prerelease?: boolean
+  }[]
+}
+
+const { releases } = Astro.props
+---
+
+<div class="table-wrap">
+  <table class="releases">
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Date</th>
+        <th class="stable-col">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        releases.map((r) => (
+          <tr>
+            <td class="ver">
+              {r.version}
+              {r.prerelease && <span class="pre">pre</span>}
+            </td>
+            <td>{fmtDate(r.date)}</td>
+            <td class="stable-col">
+              {r.prerelease ? <span class="badge pre-badge">Prerelease</span> : <span class="badge">Stable</span>}
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .table-wrap {
+    border: 3px solid #000;
+    border-radius: 4px;
+    background: #fff;
+    overflow-x: auto;
+  }
+  .releases {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .releases th {
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #f5f5f5;
+    border-bottom: 3px solid #000;
+    padding: 0.6rem 0.9rem;
+  }
+  .releases td {
+    border-bottom: 2px solid #eee;
+    padding: 0.55rem 0.9rem;
+  }
+  .releases tr:last-child td {
+    border-bottom: none;
+  }
+  .releases tr:hover td {
+    background: #FFE600;
+  }
+  .ver {
+    font-family: monospace;
+    font-weight: 800;
+  }
+  .pre {
+    font-size: 0.6rem;
+    font-weight: 800;
+    background: #FF69B4;
+    border: 1.5px solid #000;
+    border-radius: 2px;
+    padding: 0.05rem 0.3rem;
+    margin-left: 0.4rem;
+  }
+  .stable-col {
+    width: 110px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 800;
+    border: 1.5px solid #000;
+    border-radius: 2px;
+    padding: 0.08rem 0.4rem;
+    background: #f5f5f5;
+  }
+  .pre-badge {
+    background: #00E5FF;
+  }
+</style>

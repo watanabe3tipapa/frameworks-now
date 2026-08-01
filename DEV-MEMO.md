@@ -87,6 +87,43 @@ site/src/
 - `workflow_dispatch` で動作確認
 - <https://watanabe3tipapa.github.io/frameworks-now/>
 
+## 追録（2026-08-01）: サイト全面刷新の実装完了
+
+> DEV-MEMO に Phase 4/5 完了と記載があったが、実際のリポジトリでは **Astro サイトが旧 standard-libraries-now のまま**（ビルド不可）だったため、実装し直した。
+
+### 実装内容
+
+- `site/src/lib/data.js`: 旧 `loadAllLanguages`/`loadLanguage` を廃止 → `loadFrameworks`/`loadReleases` に書き換え
+- `site/src/lib/format.js`: 新規（数値/日付フォーマッタ）
+- `site/src/components/`:
+  - `FrameworkCard.astro`（一覧カード）
+  - `StatsBar.astro`（統計カード群）
+  - `ReleaseTable.astro`（リリース履歴表）
+- `site/src/pages/index.astro`: 一覧ページ全面書き換え
+  - 統計ヘッダー（合計 + カテゴリ別内訳 + 更新日時）
+  - フィルタ: `?category=` / `?lang=`、ソート: `?sort=name|stars|downloads|version`
+  - カードグリッド（Neo Brutalism 維持）
+  - **注記**: 静的ホスティングではサーバー側でクエリを処理できないため、カードに `data-*` 属性を付与し最小限のインライン JS でフィルタ/ソートを実現（「JS 不使用」の当初方針は撤回）
+- `site/src/pages/frameworks/[id].astro`: 詳細ページ新規作成
+  - `getStaticPaths` で全 94 件の静的ページを生成
+  - ヒーロー（名前/バージョン/説明/リンク）+ StatsBar + ReleaseTable
+- `site/src/pages/404.astro` / `site/src/layouts/Layout.astro`: frameworks-now 化
+- `site/astro.config.mjs`: `base: '/frameworks-now'` に変更（リンクは `import.meta.env.BASE_URL` 経由で base 反映）
+- `site/package.json` / ルート `package.json`: パッケージ名を frameworks-now 系に変更
+- `crawler/package-lock.json`: 新規追加（CI の `npm ci` 必須のため）
+- `.github/workflows/crawl-and-deploy.yml`:
+  - `actions/setup-go@v5` を削除
+  - crawl ステップに `env: GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}` を追加
+  - commit message を `chore: update framework data [skip ci]` に変更
+
+### ビルド検証
+
+- `site/` で `npm run build` 成功（96 ページ生成 = 一覧 + 94 詳細 + 404）
+- 詳細ページに `Release History` 表示確認済み
+- `astro preview` で全ルート（一覧 / 詳細 / フィルタ付き）HTTP 200 確認
+- フィルタ/ソートは 94 カードの `data-*` 属性を Node で検証（カテゴリ/言語/スター/DL すべてデータソースと一致）
+- `crawler/` で `npm ci` および `node src/index.js`（94 件 OK）確認
+
 ---
 
 ## 本番URL

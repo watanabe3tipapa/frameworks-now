@@ -2,11 +2,11 @@
 import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title="404 — standard-libraries-now">
+<Layout title="404 — frameworks-now">
   <main class="container">
     <h1 class="code">404</h1>
     <p class="msg">That page doesn't exist</p>
-    <a href="/" class="back">← Back to languages</a>
+    <a href={`${import.meta.env.BASE_URL}/`} class="back">← Back to frameworks</a>
   </main>
 </Layout>
 

@@ -1,0 +1,176 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import StatsBar from '../../components/StatsBar.astro'
+import ReleaseTable from '../../components/ReleaseTable.astro'
+import { loadFrameworks, loadReleases } from '../../lib/data'
+import { fmtDateTime } from '../../lib/format'
+
+export function getStaticPaths() {
+  const { frameworks } = loadFrameworks()
+  return frameworks.map((fw) => ({ params: { id: fw.id }, props: { framework: fw } }))
+}
+
+const { framework } = Astro.props
+const releasesData = loadReleases()
+const releaseEntry = releasesData.find((r) => r.id === framework.id)
+const releases = releaseEntry?.releases || []
+---
+
+<Layout title={`${framework.name} — frameworks-now`}>
+  <a class="back" href={`${import.meta.env.BASE_URL}/`}>← Back to all frameworks</a>
+
+  <main class="content">
+    <section class="hero">
+      <div class="hero-title">
+        <h1 class="name">{framework.name}</h1>
+        {framework.version && <span class="version">{framework.version}</span>}
+      </div>
+      <p class="desc">{framework.description}</p>
+      <div class="tags">
+        <span class="tag">{framework.category}</span>
+        <span class="tag">{framework.language}</span>
+      </div>
+      <div class="links">
+        {
+          framework.homepage && (
+            <a class="link-btn" href={framework.homepage} target="_blank" rel="noopener noreferrer">
+              Homepage
+            </a>
+          )
+        }
+        {
+          framework.repo && (
+            <a class="link-btn" href={`https://github.com/${framework.repo}`} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          )
+        }
+      </div>
+      {framework.updatedAt && (
+        <p class="updated">Data updated: {fmtDateTime(framework.updatedAt)}</p>
+      )}
+    </section>
+
+    <section>
+      <StatsBar framework={framework} />
+    </section>
+
+    <section class="releases">
+      <h2 class="section-title">Release History</h2>
+      {releases.length > 0 ? <ReleaseTable releases={releases} /> : <p class="empty">No release data available</p>}
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .back {
+    display: inline-block;
+    margin: 1.2rem 0 0 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  .back:hover {
+    background: #FFE600;
+  }
+  .content {
+    padding: 1.2rem 1.5rem 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .hero {
+    border: 3px solid #000;
+    border-radius: 4px;
+    background: #fff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .hero-title {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  .name {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+  .version {
+    font-size: 0.95rem;
+    font-weight: 900;
+    background: #FFE600;
+    padding: 0.2rem 0.7rem;
+    border: 2px solid #000;
+    border-radius: 3px;
+  }
+  .desc {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border: 2px solid #000;
+    border-radius: 2px;
+    background: #f5f5f5;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .link-btn {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 3px;
+    background: #00E5FF;
+    padding: 0.35rem 0.9rem;
+    transition: transform 0.1s;
+  }
+  .link-btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 #000;
+  }
+  .updated {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #555;
+  }
+  .releases {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .section-title {
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+  }
+  .empty {
+    border: 3px solid #000;
+    border-radius: 4px;
+    background: #fff;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    color: #555;
+  }
+</style>
