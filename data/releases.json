@@ -11487,6 +11487,11 @@
     "id": "wails",
     "releases": [
       {
+        "version": "3.0.0-alpha2.122",
+        "date": "2026-08-01",
+        "prerelease": true
+      },
+      {
         "version": "3.0.0-alpha2.121",
         "date": "2026-07-31",
         "prerelease": true
@@ -11629,11 +11634,6 @@
       {
         "version": "3.0.0-alpha.96",
         "date": "2026-05-25",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-alpha.95",
-        "date": "2026-05-20",
         "prerelease": true
       }
     ]
