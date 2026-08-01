@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T12:35:14.282Z",
+  "updatedAt": "2026-08-01T12:37:15.855Z",
   "count": 94,
   "frameworks": [
     {
@@ -14,12 +14,12 @@
       "releaseDate": "2026-07-22",
       "stars": 23288,
       "forks": 1960,
-      "openIssues": 3989,
+      "openIssues": 3988,
       "license": "MIT",
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.500Z"
+      "updatedAt": "2026-08-01T12:37:15.577Z"
     },
     {
       "id": "actix",
@@ -42,7 +42,7 @@
       "lastCommit": "2026-07-29",
       "weeklyDownloads": 9383905,
       "totalDownloads": 75456014,
-      "updatedAt": "2026-08-01T12:35:08.411Z"
+      "updatedAt": "2026-08-01T12:37:12.157Z"
     },
     {
       "id": "adonisjs",
@@ -65,7 +65,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": 138219,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.896Z"
+      "updatedAt": "2026-08-01T12:37:05.913Z"
     },
     {
       "id": "aiohttp",
@@ -88,7 +88,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 149468536,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:01.277Z"
+      "updatedAt": "2026-08-01T12:37:06.883Z"
     },
     {
       "id": "alpinejs",
@@ -111,7 +111,7 @@
       "lastCommit": "2026-07-28",
       "weeklyDownloads": 634137,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:56.376Z"
+      "updatedAt": "2026-08-01T12:37:03.846Z"
     },
     {
       "id": "angular",
@@ -134,7 +134,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 5829115,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:56.031Z"
+      "updatedAt": "2026-08-01T12:37:03.525Z"
     },
     {
       "id": "aspnet",
@@ -153,7 +153,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.197Z"
+      "updatedAt": "2026-08-01T12:37:05.918Z"
     },
     {
       "id": "astro",
@@ -176,7 +176,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 4134198,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:57.419Z"
+      "updatedAt": "2026-08-01T12:37:04.326Z"
     },
     {
       "id": "avalonia",
@@ -195,7 +195,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.941Z"
+      "updatedAt": "2026-08-01T12:37:15.663Z"
     },
     {
       "id": "axum",
@@ -218,7 +218,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": 104453590,
       "totalDownloads": 407542117,
-      "updatedAt": "2026-08-01T12:35:08.733Z"
+      "updatedAt": "2026-08-01T12:37:12.202Z"
     },
     {
       "id": "beego",
@@ -237,7 +237,7 @@
       "lastCommit": "2026-07-28",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:07.986Z"
+      "updatedAt": "2026-08-01T12:37:12.257Z"
     },
     {
       "id": "bootstrap",
@@ -260,7 +260,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 6437591,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.600Z"
+      "updatedAt": "2026-08-01T12:37:15.518Z"
     },
     {
       "id": "bottle",
@@ -283,7 +283,7 @@
       "lastCommit": "2026-07-19",
       "weeklyDownloads": 2475229,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.974Z"
+      "updatedAt": "2026-08-01T12:37:06.685Z"
     },
     {
       "id": "buffalo",
@@ -302,7 +302,7 @@
       "lastCommit": "2026-03-21",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:08.459Z"
+      "updatedAt": "2026-08-01T12:37:12.325Z"
     },
     {
       "id": "bulma",
@@ -325,7 +325,7 @@
       "lastCommit": "2026-03-01",
       "weeklyDownloads": 408201,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.617Z"
+      "updatedAt": "2026-08-01T12:37:15.587Z"
     },
     {
       "id": "cakephp",
@@ -348,7 +348,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:01.675Z"
+      "updatedAt": "2026-08-01T12:37:07.973Z"
     },
     {
       "id": "chakra",
@@ -371,7 +371,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": 1799666,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:14.282Z"
+      "updatedAt": "2026-08-01T12:37:15.791Z"
     },
     {
       "id": "chi",
@@ -390,7 +390,7 @@
       "lastCommit": "2026-07-06",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:07.114Z"
+      "updatedAt": "2026-08-01T12:37:10.820Z"
     },
     {
       "id": "codeigniter",
@@ -413,7 +413,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:01.643Z"
+      "updatedAt": "2026-08-01T12:37:07.615Z"
     },
     {
       "id": "dioxus",
@@ -429,14 +429,14 @@
       },
       "version": "0.8.0-alpha.1",
       "releaseDate": "2026-07-31",
-      "stars": 38424,
+      "stars": 38425,
       "forks": 1819,
       "openIssues": 719,
       "license": "Apache-2.0",
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 708957,
       "totalDownloads": 2132029,
-      "updatedAt": "2026-08-01T12:34:56.850Z"
+      "updatedAt": "2026-08-01T12:37:04.133Z"
     },
     {
       "id": "django",
@@ -459,7 +459,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 12706208,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.895Z"
+      "updatedAt": "2026-08-01T12:37:05.911Z"
     },
     {
       "id": "docusaurus",
@@ -482,7 +482,7 @@
       "lastCommit": "2026-07-24",
       "weeklyDownloads": 1503322,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:11.205Z"
+      "updatedAt": "2026-08-01T12:37:13.683Z"
     },
     {
       "id": "dropwizard",
@@ -501,7 +501,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:06.024Z"
+      "updatedAt": "2026-08-01T12:37:10.479Z"
     },
     {
       "id": "echo",
@@ -520,7 +520,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:07.524Z"
+      "updatedAt": "2026-08-01T12:37:11.556Z"
     },
     {
       "id": "electron",
@@ -543,7 +543,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 5494376,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:12.082Z"
+      "updatedAt": "2026-08-01T12:37:15.372Z"
     },
     {
       "id": "eleventy",
@@ -566,7 +566,7 @@
       "lastCommit": "2026-07-27",
       "weeklyDownloads": 170807,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:10.954Z"
+      "updatedAt": "2026-08-01T12:37:13.629Z"
     },
     {
       "id": "ember",
@@ -589,7 +589,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 323119,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:56.570Z"
+      "updatedAt": "2026-08-01T12:37:03.815Z"
     },
     {
       "id": "expo",
@@ -612,7 +612,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 7321167,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:12.637Z"
+      "updatedAt": "2026-08-01T12:37:14.032Z"
     },
     {
       "id": "express",
@@ -635,7 +635,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 126784291,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.712Z"
+      "updatedAt": "2026-08-01T12:37:05.994Z"
     },
     {
       "id": "falcon",
@@ -658,7 +658,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 438136,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.794Z"
+      "updatedAt": "2026-08-01T12:37:06.588Z"
     },
     {
       "id": "fastapi",
@@ -681,7 +681,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 142683050,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.572Z"
+      "updatedAt": "2026-08-01T12:37:06.480Z"
     },
     {
       "id": "fastify",
@@ -704,7 +704,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 10607453,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.897Z"
+      "updatedAt": "2026-08-01T12:37:06.222Z"
     },
     {
       "id": "fiber",
@@ -723,7 +723,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:07.922Z"
+      "updatedAt": "2026-08-01T12:37:11.894Z"
     },
     {
       "id": "flask",
@@ -746,7 +746,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": 47205502,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.320Z"
+      "updatedAt": "2026-08-01T12:37:06.319Z"
     },
     {
       "id": "flutter",
@@ -765,7 +765,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.118Z"
+      "updatedAt": "2026-08-01T12:37:15.218Z"
     },
     {
       "id": "gatsby",
@@ -788,7 +788,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 296192,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:58.613Z"
+      "updatedAt": "2026-08-01T12:37:05.711Z"
     },
     {
       "id": "gin",
@@ -807,7 +807,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:06.405Z"
+      "updatedAt": "2026-08-01T12:37:11.887Z"
     },
     {
       "id": "gorilla",
@@ -826,7 +826,7 @@
       "lastCommit": "2024-08-15",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:07.913Z"
+      "updatedAt": "2026-08-01T12:37:11.884Z"
     },
     {
       "id": "hanami",
@@ -849,7 +849,7 @@
       "lastCommit": "2026-07-23",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:04.131Z"
+      "updatedAt": "2026-08-01T12:37:07.006Z"
     },
     {
       "id": "hono",
@@ -872,7 +872,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 54336532,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.163Z"
+      "updatedAt": "2026-08-01T12:37:06.202Z"
     },
     {
       "id": "hugo",
@@ -891,7 +891,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:10.979Z"
+      "updatedAt": "2026-08-01T12:37:13.709Z"
     },
     {
       "id": "ionic",
@@ -914,7 +914,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 110092,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.248Z"
+      "updatedAt": "2026-08-01T12:37:15.335Z"
     },
     {
       "id": "jekyll",
@@ -933,7 +933,7 @@
       "lastCommit": "2026-06-22",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:10.958Z"
+      "updatedAt": "2026-08-01T12:37:14.035Z"
     },
     {
       "id": "koa",
@@ -956,7 +956,7 @@
       "lastCommit": "2026-07-17",
       "weeklyDownloads": 7786518,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.172Z"
+      "updatedAt": "2026-08-01T12:37:06.241Z"
     },
     {
       "id": "laravel",
@@ -979,7 +979,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.258Z"
+      "updatedAt": "2026-08-01T12:37:05.513Z"
     },
     {
       "id": "leptos",
@@ -1002,7 +1002,7 @@
       "lastCommit": "2026-07-28",
       "weeklyDownloads": 1193865,
       "totalDownloads": 4064122,
-      "updatedAt": "2026-08-01T12:34:56.741Z"
+      "updatedAt": "2026-08-01T12:37:03.850Z"
     },
     {
       "id": "lit",
@@ -1025,7 +1025,7 @@
       "lastCommit": "2026-07-25",
       "weeklyDownloads": 6714417,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:56.359Z"
+      "updatedAt": "2026-08-01T12:37:03.844Z"
     },
     {
       "id": "litestar",
@@ -1048,7 +1048,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 498119,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:01.225Z"
+      "updatedAt": "2026-08-01T12:37:07.016Z"
     },
     {
       "id": "mantine",
@@ -1071,7 +1071,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 2301982,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:14.034Z"
+      "updatedAt": "2026-08-01T12:37:15.780Z"
     },
     {
       "id": "mui",
@@ -1094,7 +1094,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 10187092,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.648Z"
+      "updatedAt": "2026-08-01T12:37:15.659Z"
     },
     {
       "id": "meteor",
@@ -1117,7 +1117,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 3309,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.678Z"
+      "updatedAt": "2026-08-01T12:37:05.914Z"
     },
     {
       "id": "micronaut",
@@ -1136,7 +1136,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:05.593Z"
+      "updatedAt": "2026-08-01T12:37:09.719Z"
     },
     {
       "id": "nativescript",
@@ -1159,7 +1159,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 8976,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:11.650Z"
+      "updatedAt": "2026-08-01T12:37:14.029Z"
     },
     {
       "id": "nestjs",
@@ -1182,7 +1182,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 13089082,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.371Z"
+      "updatedAt": "2026-08-01T12:37:06.221Z"
     },
     {
       "id": "nextjs",
@@ -1205,7 +1205,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 54885104,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:57.269Z"
+      "updatedAt": "2026-08-01T12:37:04.636Z"
     },
     {
       "id": "nuxt",
@@ -1228,7 +1228,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 1770698,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:56.789Z"
+      "updatedAt": "2026-08-01T12:37:04.151Z"
     },
     {
       "id": "phalcon",
@@ -1251,7 +1251,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:03.439Z"
+      "updatedAt": "2026-08-01T12:37:09.060Z"
     },
     {
       "id": "play",
@@ -1270,7 +1270,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:07.917Z"
+      "updatedAt": "2026-08-01T12:37:11.219Z"
     },
     {
       "id": "poem",
@@ -1293,7 +1293,7 @@
       "lastCommit": "2026-05-16",
       "weeklyDownloads": 776098,
       "totalDownloads": 5304996,
-      "updatedAt": "2026-08-01T12:35:09.856Z"
+      "updatedAt": "2026-08-01T12:37:13.224Z"
     },
     {
       "id": "preact",
@@ -1316,7 +1316,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 27716120,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:56.322Z"
+      "updatedAt": "2026-08-01T12:37:03.853Z"
     },
     {
       "id": "pyramid",
@@ -1339,7 +1339,7 @@
       "lastCommit": "2026-06-19",
       "weeklyDownloads": 571031,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.780Z"
+      "updatedAt": "2026-08-01T12:37:06.687Z"
     },
     {
       "id": "quarkus",
@@ -1358,7 +1358,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:06.744Z"
+      "updatedAt": "2026-08-01T12:37:10.094Z"
     },
     {
       "id": "qwik",
@@ -1381,7 +1381,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 43554,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:55.987Z"
+      "updatedAt": "2026-08-01T12:37:03.524Z"
     },
     {
       "id": "react",
@@ -1404,7 +1404,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 161654447,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:56.361Z"
+      "updatedAt": "2026-08-01T12:37:03.854Z"
     },
     {
       "id": "react-native",
@@ -1427,7 +1427,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 11038444,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:11.419Z"
+      "updatedAt": "2026-08-01T12:37:14.390Z"
     },
     {
       "id": "redwood",
@@ -1450,7 +1450,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 9628,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.466Z"
+      "updatedAt": "2026-08-01T12:37:05.914Z"
     },
     {
       "id": "remix",
@@ -1473,7 +1473,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 657002,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:57.475Z"
+      "updatedAt": "2026-08-01T12:37:04.155Z"
     },
     {
       "id": "revel",
@@ -1492,7 +1492,7 @@
       "lastCommit": "2023-10-28",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:07.920Z"
+      "updatedAt": "2026-08-01T12:37:11.890Z"
     },
     {
       "id": "rocket",
@@ -1515,7 +1515,7 @@
       "lastCommit": "2025-12-28",
       "weeklyDownloads": 1161702,
       "totalDownloads": 12342881,
-      "updatedAt": "2026-08-01T12:35:08.662Z"
+      "updatedAt": "2026-08-01T12:37:12.439Z"
     },
     {
       "id": "roda",
@@ -1538,7 +1538,7 @@
       "lastCommit": "2026-07-13",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:04.762Z"
+      "updatedAt": "2026-08-01T12:37:07.018Z"
     },
     {
       "id": "rails",
@@ -1561,7 +1561,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.243Z"
+      "updatedAt": "2026-08-01T12:37:05.069Z"
     },
     {
       "id": "sails",
@@ -1584,7 +1584,7 @@
       "lastCommit": "2026-05-27",
       "weeklyDownloads": 40556,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.351Z"
+      "updatedAt": "2026-08-01T12:37:06.280Z"
     },
     {
       "id": "sanic",
@@ -1607,7 +1607,7 @@
       "lastCommit": "2026-07-29",
       "weeklyDownloads": 440529,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:01.165Z"
+      "updatedAt": "2026-08-01T12:37:06.796Z"
     },
     {
       "id": "shadcn",
@@ -1623,14 +1623,14 @@
       },
       "version": "4.16.1",
       "releaseDate": "2026-07-31",
-      "stars": 120268,
-      "forks": 9638,
+      "stars": 120269,
+      "forks": 9639,
       "openIssues": 2199,
       "license": "MIT",
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 7335793,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:14.060Z"
+      "updatedAt": "2026-08-01T12:37:15.855Z"
     },
     {
       "id": "sinatra",
@@ -1653,7 +1653,7 @@
       "lastCommit": "2026-07-20",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:01.297Z"
+      "updatedAt": "2026-08-01T12:37:06.983Z"
     },
     {
       "id": "slim",
@@ -1676,7 +1676,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:01.725Z"
+      "updatedAt": "2026-08-01T12:37:08.349Z"
     },
     {
       "id": "solid",
@@ -1699,7 +1699,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 3107551,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:55.921Z"
+      "updatedAt": "2026-08-01T12:37:03.523Z"
     },
     {
       "id": "solidstart",
@@ -1722,7 +1722,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 2781,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:57.420Z"
+      "updatedAt": "2026-08-01T12:37:04.361Z"
     },
     {
       "id": "spring-boot",
@@ -1741,7 +1741,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:59.249Z"
+      "updatedAt": "2026-08-01T12:37:05.529Z"
     },
     {
       "id": "starlette",
@@ -1764,7 +1764,7 @@
       "lastCommit": "2026-07-28",
       "weeklyDownloads": 147391595,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.865Z"
+      "updatedAt": "2026-08-01T12:37:06.690Z"
     },
     {
       "id": "svelte",
@@ -1787,7 +1787,7 @@
       "lastCommit": "2026-07-30",
       "weeklyDownloads": 5300370,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:55.888Z"
+      "updatedAt": "2026-08-01T12:37:03.521Z"
     },
     {
       "id": "sveltekit",
@@ -1810,7 +1810,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 2343880,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:57.273Z"
+      "updatedAt": "2026-08-01T12:37:04.099Z"
     },
     {
       "id": "symfony",
@@ -1833,7 +1833,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:02.251Z"
+      "updatedAt": "2026-08-01T12:37:07.079Z"
     },
     {
       "id": "tailwind",
@@ -1856,7 +1856,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": 117234689,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.596Z"
+      "updatedAt": "2026-08-01T12:37:15.503Z"
     },
     {
       "id": "tauri",
@@ -1872,14 +1872,14 @@
       },
       "version": "2.11.1",
       "releaseDate": "2026-06-17",
-      "stars": 109767,
+      "stars": 109768,
       "forks": 3822,
       "openIssues": 1425,
       "license": "Apache-2.0",
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 2179625,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.110Z"
+      "updatedAt": "2026-08-01T12:37:15.210Z"
     },
     {
       "id": "tide",
@@ -1902,7 +1902,7 @@
       "lastCommit": "2024-01-05",
       "weeklyDownloads": 213901,
       "totalDownloads": 3453802,
-      "updatedAt": "2026-08-01T12:35:09.275Z"
+      "updatedAt": "2026-08-01T12:37:12.810Z"
     },
     {
       "id": "tornado",
@@ -1925,7 +1925,7 @@
       "lastCommit": "2026-07-08",
       "weeklyDownloads": 29508152,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:00.883Z"
+      "updatedAt": "2026-08-01T12:37:06.688Z"
     },
     {
       "id": "vertx",
@@ -1944,7 +1944,7 @@
       "lastCommit": "2026-07-31",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:05.172Z"
+      "updatedAt": "2026-08-01T12:37:09.393Z"
     },
     {
       "id": "vitepress",
@@ -1967,7 +1967,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 719740,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:09.882Z"
+      "updatedAt": "2026-08-01T12:37:13.225Z"
     },
     {
       "id": "vue",
@@ -1990,7 +1990,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 14169272,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:34:55.885Z"
+      "updatedAt": "2026-08-01T12:37:03.524Z"
     },
     {
       "id": "wails",
@@ -2009,7 +2009,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:13.113Z"
+      "updatedAt": "2026-08-01T12:37:14.823Z"
     },
     {
       "id": "warp",
@@ -2032,7 +2032,7 @@
       "lastCommit": "2026-07-28",
       "weeklyDownloads": 4740443,
       "totalDownloads": 45281085,
-      "updatedAt": "2026-08-01T12:35:08.316Z"
+      "updatedAt": "2026-08-01T12:37:12.182Z"
     },
     {
       "id": "yew",
@@ -2055,7 +2055,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": 335064,
       "totalDownloads": 4685642,
-      "updatedAt": "2026-08-01T12:34:57.276Z"
+      "updatedAt": "2026-08-01T12:37:04.060Z"
     },
     {
       "id": "yii",
@@ -2078,7 +2078,7 @@
       "lastCommit": "2026-08-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-08-01T12:35:02.962Z"
+      "updatedAt": "2026-08-01T12:37:08.709Z"
     }
   ]
 }
