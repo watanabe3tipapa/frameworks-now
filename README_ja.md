@@ -83,7 +83,7 @@ npm run build
 
 ## ライセンス
 
-未定。
+MIT License
 
 ## 連絡先
 

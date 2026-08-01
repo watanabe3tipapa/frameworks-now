@@ -84,7 +84,7 @@ Contributions are welcome! Add or update frameworks in `crawler/src/config.js`.
 
 ## License
 
-License not yet specified.
+MIT License
 
 ## Contact
 
