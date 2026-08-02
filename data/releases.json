@@ -6103,6 +6103,10 @@
     "id": "mantine",
     "releases": [
       {
+        "version": "9.5.1",
+        "date": "2026-08-02"
+      },
+      {
         "version": "9.5.1-alpha.1",
         "date": "2026-07-30"
       },
@@ -6217,10 +6221,6 @@
       {
         "version": "8.3.15",
         "date": "2026-02-16"
-      },
-      {
-        "version": "9.0.0-alpha.0",
-        "date": "2026-02-12"
       }
     ]
   },
@@ -6883,6 +6883,10 @@
     "id": "nextjs",
     "releases": [
       {
+        "version": "16.3.0-canary.106",
+        "date": "2026-08-01"
+      },
+      {
         "version": "16.3.0-canary.105",
         "date": "2026-08-01"
       },
@@ -6997,10 +7001,6 @@
       {
         "version": "16.3.0-preview.6",
         "date": "2026-07-13"
-      },
-      {
-        "version": "16.3.0-canary.84",
-        "date": "2026-07-12"
       }
     ]
   },
@@ -8193,6 +8193,10 @@
     "id": "react-native",
     "releases": [
       {
+        "version": "0.88.0-nightly-20260802-8e995e8da",
+        "date": "2026-08-02"
+      },
+      {
         "version": "0.88.0-nightly-20260801-c7d62a125",
         "date": "2026-08-01"
       },
@@ -8307,10 +8311,6 @@
       {
         "version": "0.87.0-nightly-20260708-b67b7ba62",
         "date": "2026-07-08"
-      },
-      {
-        "version": "0.87.0-nightly-20260707-b67b7ba62",
-        "date": "2026-07-07"
       }
     ]
   },
@@ -11237,6 +11237,10 @@
     "id": "vitepress",
     "releases": [
       {
+        "version": "2.0.0-alpha.19",
+        "date": "2026-08-02"
+      },
+      {
         "version": "2.0.0-alpha.18",
         "date": "2026-07-06"
       },
@@ -11351,10 +11355,6 @@
       {
         "version": "1.4.1",
         "date": "2024-10-13"
-      },
-      {
-        "version": "1.4.0",
-        "date": "2024-10-07"
       }
     ]
   },
@@ -11486,6 +11486,21 @@
   {
     "id": "wails",
     "releases": [
+      {
+        "version": "3.0.0-beta.2",
+        "date": "2026-08-02",
+        "prerelease": true
+      },
+      {
+        "version": "3.0.0-beta.1",
+        "date": "2026-08-02",
+        "prerelease": true
+      },
+      {
+        "version": "3.0.0-beta.0",
+        "date": "2026-08-02",
+        "prerelease": true
+      },
       {
         "version": "3.0.0-alpha2.122",
         "date": "2026-08-01",
@@ -11619,21 +11634,6 @@
       {
         "version": "3.0.0-alpha.100",
         "date": "2026-06-13",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-alpha.98",
-        "date": "2026-06-03",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-alpha.97",
-        "date": "2026-05-31",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-alpha.96",
-        "date": "2026-05-25",
         "prerelease": true
       }
     ]
