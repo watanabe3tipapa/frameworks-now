@@ -5323,6 +5323,10 @@
     "id": "ionic",
     "releases": [
       {
+        "version": "8.8.19-dev.11786832241.150538c7",
+        "date": "2026-08-15"
+      },
+      {
         "version": "8.8.19-dev.11786735826.1fad7c0a",
         "date": "2026-08-14"
       },
@@ -5437,10 +5441,6 @@
       {
         "version": "8.8.16-nightly.20260729",
         "date": "2026-07-29"
-      },
-      {
-        "version": "8.8.16-dev.11785274070.1b3387c9",
-        "date": "2026-07-28"
       }
     ]
   },
@@ -6883,6 +6883,10 @@
     "id": "nextjs",
     "releases": [
       {
+        "version": "16.3.1-canary.20",
+        "date": "2026-08-16"
+      },
+      {
         "version": "16.3.1-canary.19",
         "date": "2026-08-15"
       },
@@ -6996,10 +7000,6 @@
       },
       {
         "version": "16.3.0-canary.101",
-        "date": "2026-07-28"
-      },
-      {
-        "version": "16.3.0-canary.100",
         "date": "2026-07-28"
       }
     ]
@@ -8193,6 +8193,10 @@
     "id": "react-native",
     "releases": [
       {
+        "version": "0.88.0-nightly-20260816-d07bd6f83",
+        "date": "2026-08-16"
+      },
+      {
         "version": "0.88.0-nightly-20260815-d07bd6f83",
         "date": "2026-08-15"
       },
@@ -8307,10 +8311,6 @@
       {
         "version": "0.88.0-nightly-20260720-e64027865",
         "date": "2026-07-20"
-      },
-      {
-        "version": "0.88.0-nightly-20260719-9f3108d61",
-        "date": "2026-07-19"
       }
     ]
   },
@@ -11487,6 +11487,11 @@
     "id": "wails",
     "releases": [
       {
+        "version": "3.0.0-beta.9",
+        "date": "2026-08-16",
+        "prerelease": true
+      },
+      {
         "version": "3.0.0-beta.8",
         "date": "2026-08-12",
         "prerelease": true
@@ -11630,11 +11635,6 @@
         "version": "3.0.0-alpha2.106",
         "date": "2026-06-24",
         "prerelease": true
-      },
-      {
-        "version": "webview2/v1.0.27",
-        "date": "2026-06-24",
-        "prerelease": false
       }
     ]
   },
