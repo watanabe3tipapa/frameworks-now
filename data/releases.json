@@ -6883,6 +6883,10 @@
     "id": "nextjs",
     "releases": [
       {
+        "version": "16.4.0-canary.2",
+        "date": "2026-08-22"
+      },
+      {
         "version": "16.4.0-canary.1",
         "date": "2026-08-21"
       },
@@ -6997,10 +7001,6 @@
       {
         "version": "16.3.1-canary.2",
         "date": "2026-08-05"
-      },
-      {
-        "version": "16.3.1-canary.1",
-        "date": "2026-08-04"
       }
     ]
   },
@@ -8193,6 +8193,10 @@
     "id": "react-native",
     "releases": [
       {
+        "version": "0.88.0-nightly-20260823-0c7f63a4e",
+        "date": "2026-08-23"
+      },
+      {
         "version": "0.88.0-nightly-20260822-091ac613c",
         "date": "2026-08-22"
       },
@@ -8307,10 +8311,6 @@
       {
         "version": "0.88.0-nightly-20260726-c1843c4db",
         "date": "2026-07-26"
-      },
-      {
-        "version": "0.88.0-nightly-20260725-f46ace878",
-        "date": "2026-07-25"
       }
     ]
   },
