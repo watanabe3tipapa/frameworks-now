@@ -2028,6 +2028,10 @@
     "id": "cakephp",
     "releases": [
       {
+        "version": "5.4.2",
+        "date": "2026-09-06"
+      },
+      {
         "version": "5.4.1",
         "date": "2026-07-29"
       },
@@ -2142,10 +2146,6 @@
       {
         "version": "5.2.6",
         "date": "2025-08-02"
-      },
-      {
-        "version": "4.6.2",
-        "date": "2025-07-27"
       }
     ]
   },
@@ -6633,6 +6633,10 @@
     "id": "nativescript",
     "releases": [
       {
+        "version": "9.1.2-next.2026-09-06-34003432040",
+        "date": "2026-09-06"
+      },
+      {
         "version": "9.0.8-sap.0",
         "date": "2026-09-01"
       },
@@ -6746,10 +6750,6 @@
       },
       {
         "version": "9.1.0-next.2026-08-05-31034335889",
-        "date": "2026-08-05"
-      },
-      {
-        "version": "9.1.0-next.2026-08-05-31031028518",
         "date": "2026-08-05"
       }
     ]
@@ -6883,6 +6883,10 @@
     "id": "nextjs",
     "releases": [
       {
+        "version": "16.4.0-canary.19",
+        "date": "2026-09-05"
+      },
+      {
         "version": "16.4.0-canary.18",
         "date": "2026-09-04"
       },
@@ -6996,10 +7000,6 @@
       },
       {
         "version": "16.3.1-canary.22",
-        "date": "2026-08-17"
-      },
-      {
-        "version": "16.3.1-canary.21",
         "date": "2026-08-17"
       }
     ]
@@ -8193,6 +8193,10 @@
     "id": "react-native",
     "releases": [
       {
+        "version": "0.88.0-nightly-20260906-8cfde6d08",
+        "date": "2026-09-06"
+      },
+      {
         "version": "0.88.0-nightly-20260905-08c7781e5",
         "date": "2026-09-05"
       },
@@ -8307,10 +8311,6 @@
       {
         "version": "0.88.0-nightly-20260807-5fb3ebce1",
         "date": "2026-08-07"
-      },
-      {
-        "version": "0.88.0-nightly-20260806-65008fcdd",
-        "date": "2026-08-06"
       }
     ]
   },
@@ -11487,6 +11487,11 @@
     "id": "wails",
     "releases": [
       {
+        "version": "3.0.0-beta.17",
+        "date": "2026-09-06",
+        "prerelease": true
+      },
+      {
         "version": "3.0.0-beta.16",
         "date": "2026-08-29",
         "prerelease": true
@@ -11630,11 +11635,6 @@
         "version": "3.0.0-alpha2.113",
         "date": "2026-07-04",
         "prerelease": true
-      },
-      {
-        "version": "webview2/v1.0.28",
-        "date": "2026-07-04",
-        "prerelease": false
       }
     ]
   },
