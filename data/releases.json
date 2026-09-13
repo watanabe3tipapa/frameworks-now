@@ -6883,6 +6883,10 @@
     "id": "nextjs",
     "releases": [
       {
+        "version": "16.4.0-canary.28",
+        "date": "2026-09-12"
+      },
+      {
         "version": "16.4.0-canary.27",
         "date": "2026-09-11"
       },
@@ -6997,10 +7001,6 @@
       {
         "version": "16.4.0-canary.4",
         "date": "2026-08-24"
-      },
-      {
-        "version": "16.4.0-canary.3",
-        "date": "2026-08-23"
       }
     ]
   },
@@ -8193,6 +8193,10 @@
     "id": "react-native",
     "releases": [
       {
+        "version": "0.89.0-nightly-20260913-b936db95d",
+        "date": "2026-09-13"
+      },
+      {
         "version": "0.89.0-nightly-20260912-e0224fd40",
         "date": "2026-09-12"
       },
@@ -8307,10 +8311,6 @@
       {
         "version": "0.88.0-nightly-20260815-d07bd6f83",
         "date": "2026-08-15"
-      },
-      {
-        "version": "0.88.0-nightly-20260814-88043334e",
-        "date": "2026-08-14"
       }
     ]
   },
@@ -11487,6 +11487,11 @@
     "id": "wails",
     "releases": [
       {
+        "version": "3.0.0-beta.21",
+        "date": "2026-09-13",
+        "prerelease": true
+      },
+      {
         "version": "3.0.0-beta.20",
         "date": "2026-09-10",
         "prerelease": true
@@ -11629,11 +11634,6 @@
       {
         "version": "3.0.0-alpha2.116",
         "date": "2026-07-07",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-alpha2.115",
-        "date": "2026-07-06",
         "prerelease": true
       }
     ]
