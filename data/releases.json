@@ -5728,6 +5728,14 @@
     "id": "leptos",
     "releases": [
       {
+        "version": "0.8.21",
+        "date": "2026-09-26"
+      },
+      {
+        "version": "0.9.0-beta2",
+        "date": "2026-09-26"
+      },
+      {
         "version": "0.9.0-beta",
         "date": "2026-07-18"
       },
@@ -5838,14 +5846,6 @@
       {
         "version": "0.7.7",
         "date": "2025-02-12"
-      },
-      {
-        "version": "0.7.6",
-        "date": "2025-02-12"
-      },
-      {
-        "version": "0.7.5",
-        "date": "2025-01-31"
       }
     ]
   },
@@ -6103,6 +6103,10 @@
     "id": "mantine",
     "releases": [
       {
+        "version": "9.6.3",
+        "date": "2026-09-26"
+      },
+      {
         "version": "9.6.2",
         "date": "2026-09-21"
       },
@@ -6216,10 +6220,6 @@
       },
       {
         "version": "9.0.0-alpha.4",
-        "date": "2026-03-05"
-      },
-      {
-        "version": "8.3.16",
         "date": "2026-03-05"
       }
     ]
@@ -6478,6 +6478,11 @@
     "id": "micronaut",
     "releases": [
       {
+        "version": "5.2.8",
+        "date": "2026-09-26",
+        "prerelease": false
+      },
+      {
         "version": "5.2.7",
         "date": "2026-09-24",
         "prerelease": false
@@ -6620,11 +6625,6 @@
       {
         "version": "4.10.26",
         "date": "2026-07-08",
-        "prerelease": false
-      },
-      {
-        "version": "5.0.5",
-        "date": "2026-07-07",
         "prerelease": false
       }
     ]
@@ -6883,6 +6883,14 @@
     "id": "nextjs",
     "releases": [
       {
+        "version": "16.4.0-canary.49",
+        "date": "2026-09-26"
+      },
+      {
+        "version": "16.4.0-canary.48",
+        "date": "2026-09-26"
+      },
+      {
         "version": "16.4.0-canary.47",
         "date": "2026-09-25"
       },
@@ -6993,14 +7001,6 @@
       {
         "version": "16.4.0-canary.23",
         "date": "2026-09-09"
-      },
-      {
-        "version": "16.4.0-canary.22",
-        "date": "2026-09-08"
-      },
-      {
-        "version": "16.4.0-canary.21",
-        "date": "2026-09-08"
       }
     ]
   },
@@ -8193,6 +8193,10 @@
     "id": "react-native",
     "releases": [
       {
+        "version": "0.89.0-nightly-20260926-d7ff82ebe",
+        "date": "2026-09-26"
+      },
+      {
         "version": "0.89.0-nightly-20260925-de350e65e",
         "date": "2026-09-25"
       },
@@ -8307,10 +8311,6 @@
       {
         "version": "0.88.0-nightly-20260828-04e50d540",
         "date": "2026-08-28"
-      },
-      {
-        "version": "0.87.1",
-        "date": "2026-08-26"
       }
     ]
   },
@@ -10723,6 +10723,14 @@
     "id": "tauri",
     "releases": [
       {
+        "version": "3.0.0-alpha.2",
+        "date": "2026-09-26"
+      },
+      {
+        "version": "2.12.0",
+        "date": "2026-09-26"
+      },
+      {
         "version": "3.0.0-alpha.1",
         "date": "2026-09-21"
       },
@@ -10833,14 +10841,6 @@
       {
         "version": "2.0.0-rc.1",
         "date": "2024-08-17"
-      },
-      {
-        "version": "2.0.0-rc.0",
-        "date": "2024-08-02"
-      },
-      {
-        "version": "2.0.0-beta.16",
-        "date": "2024-07-29"
       }
     ]
   },
