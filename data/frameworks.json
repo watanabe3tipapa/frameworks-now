@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T23:57:41.019Z",
+  "updatedAt": "2026-10-09T00:04:41.478Z",
   "count": 94,
   "frameworks": [
     {
@@ -13,13 +13,13 @@
       "version": "10.0.110",
       "releaseDate": "2026-09-22",
       "stars": 23321,
-      "forks": 1984,
-      "openIssues": 3597,
+      "forks": 1985,
+      "openIssues": 3599,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.628Z"
+      "updatedAt": "2026-10-09T00:04:41.186Z"
     },
     {
       "id": "actix",
@@ -35,14 +35,14 @@
       },
       "version": "4.15.0",
       "releaseDate": "2026-08-21",
-      "stars": 24858,
-      "forks": 1890,
+      "stars": 24861,
+      "forks": 1889,
       "openIssues": 196,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 11443789,
-      "totalDownloads": 84374450,
-      "updatedAt": "2026-10-07T23:57:37.036Z"
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 11499041,
+      "totalDownloads": 84552620,
+      "updatedAt": "2026-10-09T00:04:38.577Z"
     },
     {
       "id": "adonisjs",
@@ -58,14 +58,14 @@
       },
       "version": "7.6.0",
       "releaseDate": "2026-10-05",
-      "stars": 19143,
-      "forks": 670,
+      "stars": 19144,
+      "forks": 669,
       "openIssues": 10,
       "license": "MIT",
-      "lastCommit": "2026-10-05",
-      "weeklyDownloads": 262078,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 226353,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:29.821Z"
+      "updatedAt": "2026-10-09T00:04:33.453Z"
     },
     {
       "id": "aiohttp",
@@ -81,14 +81,14 @@
       },
       "version": "3.14.4",
       "releaseDate": "2026-10-05",
-      "stars": 16568,
-      "forks": 2440,
-      "openIssues": 216,
+      "stars": 16567,
+      "forks": 2444,
+      "openIssues": 221,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 114780102,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 115563539,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.728Z"
+      "updatedAt": "2026-10-09T00:04:34.010Z"
     },
     {
       "id": "alpinejs",
@@ -106,12 +106,12 @@
       "releaseDate": "2026-09-21",
       "stars": 31967,
       "forks": 1390,
-      "openIssues": 17,
+      "openIssues": 18,
       "license": "MIT",
       "lastCommit": "2026-10-05",
-      "weeklyDownloads": 838537,
+      "weeklyDownloads": 707895,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.629Z"
+      "updatedAt": "2026-10-09T00:04:31.678Z"
     },
     {
       "id": "angular",
@@ -125,16 +125,16 @@
         "manager": "npm",
         "name": "@angular/core"
       },
-      "version": "22.2.1",
-      "releaseDate": "2026-09-30",
-      "stars": 101019,
-      "forks": 29587,
-      "openIssues": 1155,
+      "version": "22.2.2",
+      "releaseDate": "2026-10-08",
+      "stars": 101020,
+      "forks": 29622,
+      "openIssues": 1166,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 7300962,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 6027863,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.414Z"
+      "updatedAt": "2026-10-09T00:04:31.400Z"
     },
     {
       "id": "aspnet",
@@ -146,14 +146,14 @@
       "homepage": "https://asp.net",
       "version": "10.0.12",
       "releaseDate": "2026-09-08",
-      "stars": 38466,
-      "forks": 12979,
-      "openIssues": 4223,
+      "stars": 38465,
+      "forks": 13024,
+      "openIssues": 4219,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:29.969Z"
+      "updatedAt": "2026-10-09T00:04:33.458Z"
     },
     {
       "id": "astro",
@@ -167,16 +167,16 @@
         "manager": "npm",
         "name": "astro"
       },
-      "version": "7.3.7",
-      "releaseDate": "2026-10-07",
-      "stars": 63096,
-      "forks": 3839,
+      "version": "7.3.8",
+      "releaseDate": "2026-10-08",
+      "stars": 63123,
+      "forks": 3842,
       "openIssues": 107,
       "license": "NOASSERTION",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 7930766,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:28.456Z"
+      "updatedAt": "2026-10-09T00:04:32.280Z"
     },
     {
       "id": "avalonia",
@@ -188,14 +188,14 @@
       "homepage": "https://avaloniaui.net",
       "version": "12.1.3",
       "releaseDate": "2026-09-22",
-      "stars": 31625,
-      "forks": 2837,
-      "openIssues": 1931,
+      "stars": 31630,
+      "forks": 2838,
+      "openIssues": 1930,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.838Z"
+      "updatedAt": "2026-10-09T00:04:41.211Z"
     },
     {
       "id": "axum",
@@ -211,14 +211,14 @@
       },
       "version": "0.8.9",
       "releaseDate": "2026-04-14",
-      "stars": 27405,
-      "forks": 1497,
-      "openIssues": 89,
+      "stars": 27417,
+      "forks": 1501,
+      "openIssues": 91,
       "license": "MIT",
       "lastCommit": "2026-10-07",
-      "weeklyDownloads": 128806903,
-      "totalDownloads": 507266061,
-      "updatedAt": "2026-10-07T23:57:36.928Z"
+      "weeklyDownloads": 129662804,
+      "totalDownloads": 509490619,
+      "updatedAt": "2026-10-09T00:04:38.589Z"
     },
     {
       "id": "beego",
@@ -230,14 +230,14 @@
       "homepage": "https://beego.vip",
       "version": "2.3.10",
       "releaseDate": "2026-04-03",
-      "stars": 32426,
-      "forks": 5572,
+      "stars": 32425,
+      "forks": 5571,
       "openIssues": 20,
       "license": "NOASSERTION",
       "lastCommit": "2026-10-05",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:36.648Z"
+      "updatedAt": "2026-10-09T00:04:38.324Z"
     },
     {
       "id": "bootstrap",
@@ -253,14 +253,14 @@
       },
       "version": "5.3.8",
       "releaseDate": "2025-08-26",
-      "stars": 174996,
-      "forks": 78548,
-      "openIssues": 224,
+      "stars": 174793,
+      "forks": 78543,
+      "openIssues": 223,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 7193994,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 5820719,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.738Z"
+      "updatedAt": "2026-10-09T00:04:41.139Z"
     },
     {
       "id": "bottle",
@@ -281,9 +281,9 @@
       "openIssues": 289,
       "license": "MIT",
       "lastCommit": "2026-09-18",
-      "weeklyDownloads": 1706393,
+      "weeklyDownloads": 1725273,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.572Z"
+      "updatedAt": "2026-10-09T00:04:33.900Z"
     },
     {
       "id": "buffalo",
@@ -295,14 +295,14 @@
       "homepage": "http://gobuffalo.io",
       "version": "1.1.4",
       "releaseDate": "2026-03-20",
-      "stars": 8416,
+      "stars": 8417,
       "forks": 581,
       "openIssues": 21,
       "license": "MIT",
       "lastCommit": "2026-03-21",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:36.984Z"
+      "updatedAt": "2026-10-09T00:04:38.725Z"
     },
     {
       "id": "bulma",
@@ -318,14 +318,14 @@
       },
       "version": "1.0.4",
       "releaseDate": "2025-04-19",
-      "stars": 50049,
-      "forks": 3873,
-      "openIssues": 527,
+      "stars": 50047,
+      "forks": 3872,
+      "openIssues": 526,
       "license": "MIT",
       "lastCommit": "2026-09-21",
-      "weeklyDownloads": 406933,
+      "weeklyDownloads": 341858,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.738Z"
+      "updatedAt": "2026-10-09T00:04:41.129Z"
     },
     {
       "id": "cakephp",
@@ -343,12 +343,12 @@
       "releaseDate": "2026-10-03",
       "stars": 8790,
       "forks": 3360,
-      "openIssues": 31,
+      "openIssues": 33,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:31.948Z"
+      "updatedAt": "2026-10-09T00:04:34.652Z"
     },
     {
       "id": "chakra",
@@ -369,9 +369,9 @@
       "openIssues": 15,
       "license": "MIT",
       "lastCommit": "2026-10-06",
-      "weeklyDownloads": 2006693,
+      "weeklyDownloads": 1590714,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:41.011Z"
+      "updatedAt": "2026-10-09T00:04:41.468Z"
     },
     {
       "id": "chi",
@@ -383,14 +383,14 @@
       "homepage": "https://go-chi.io",
       "version": "5.3.2",
       "releaseDate": "2026-08-20",
-      "stars": 22931,
-      "forks": 2947,
+      "stars": 22936,
+      "forks": 2990,
       "openIssues": 120,
       "license": "MIT",
       "lastCommit": "2026-09-30",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:35.397Z"
+      "updatedAt": "2026-10-09T00:04:38.023Z"
     },
     {
       "id": "codeigniter",
@@ -408,12 +408,12 @@
       "releaseDate": "2026-07-07",
       "stars": 5987,
       "forks": 2001,
-      "openIssues": 40,
+      "openIssues": 39,
       "license": "MIT",
-      "lastCommit": "2026-10-06",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:31.441Z"
+      "updatedAt": "2026-10-09T00:04:34.266Z"
     },
     {
       "id": "dioxus",
@@ -429,14 +429,14 @@
       },
       "version": "0.8.0-alpha.1",
       "releaseDate": "2026-07-31",
-      "stars": 39338,
-      "forks": 1915,
-      "openIssues": 820,
+      "stars": 39348,
+      "forks": 1917,
+      "openIssues": 823,
       "license": "Apache-2.0",
       "lastCommit": "2026-10-03",
-      "weeklyDownloads": 1127908,
-      "totalDownloads": 3004899,
-      "updatedAt": "2026-10-07T23:57:27.977Z"
+      "weeklyDownloads": 1136827,
+      "totalDownloads": 3024448,
+      "updatedAt": "2026-10-09T00:04:31.857Z"
     },
     {
       "id": "django",
@@ -452,14 +452,14 @@
       },
       "version": "6.1.2",
       "releaseDate": "2026-10-06",
-      "stars": 91353,
-      "forks": 36478,
-      "openIssues": 533,
+      "stars": 91351,
+      "forks": 36521,
+      "openIssues": 538,
       "license": "BSD-3-Clause",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 10296568,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 10377576,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:29.783Z"
+      "updatedAt": "2026-10-09T00:04:33.078Z"
     },
     {
       "id": "docusaurus",
@@ -475,14 +475,14 @@
       },
       "version": "3.10.2",
       "releaseDate": "2026-07-10",
-      "stars": 66427,
-      "forks": 10063,
-      "openIssues": 421,
+      "stars": 66440,
+      "forks": 10068,
+      "openIssues": 418,
       "license": "MIT",
-      "lastCommit": "2026-10-05",
-      "weeklyDownloads": 1727162,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 1447885,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:38.628Z"
+      "updatedAt": "2026-10-09T00:04:39.907Z"
     },
     {
       "id": "dropwizard",
@@ -494,14 +494,14 @@
       "homepage": "https://www.dropwizard.io",
       "version": "5.0.2",
       "releaseDate": "2026-05-31",
-      "stars": 8582,
+      "stars": 8583,
       "forks": 3402,
       "openIssues": 37,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:36.656Z"
+      "updatedAt": "2026-10-09T00:04:38.325Z"
     },
     {
       "id": "echo",
@@ -513,14 +513,14 @@
       "homepage": "https://echo.labstack.com",
       "version": "5.4.0",
       "releaseDate": "2026-09-27",
-      "stars": 32760,
-      "forks": 4229,
-      "openIssues": 58,
+      "stars": 32759,
+      "forks": 4270,
+      "openIssues": 59,
       "license": "MIT",
       "lastCommit": "2026-10-07",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:34.405Z"
+      "updatedAt": "2026-10-09T00:04:37.464Z"
     },
     {
       "id": "electron",
@@ -536,14 +536,14 @@
       },
       "version": "44.7.0",
       "releaseDate": "2026-10-07",
-      "stars": 123427,
-      "forks": 17582,
-      "openIssues": 743,
+      "stars": 123238,
+      "forks": 17583,
+      "openIssues": 736,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 9575226,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.512Z"
+      "updatedAt": "2026-10-09T00:04:40.920Z"
     },
     {
       "id": "eleventy",
@@ -561,12 +561,12 @@
       "releaseDate": "2026-06-02",
       "stars": 19954,
       "forks": 590,
-      "openIssues": 179,
+      "openIssues": 180,
       "license": "MIT",
       "lastCommit": "2026-10-02",
-      "weeklyDownloads": 247190,
+      "weeklyDownloads": 206648,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:38.523Z"
+      "updatedAt": "2026-10-09T00:04:39.671Z"
     },
     {
       "id": "ember",
@@ -582,14 +582,14 @@
       },
       "version": "7.3.0",
       "releaseDate": "2026-09-14",
-      "stars": 22562,
-      "forks": 4166,
-      "openIssues": 269,
+      "stars": 22561,
+      "forks": 4164,
+      "openIssues": 272,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 371454,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 299784,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.697Z"
+      "updatedAt": "2026-10-09T00:04:31.622Z"
     },
     {
       "id": "expo",
@@ -605,14 +605,14 @@
       },
       "version": "57.0.27",
       "releaseDate": "2026-10-06",
-      "stars": 52597,
-      "forks": 14416,
-      "openIssues": 845,
+      "stars": 52603,
+      "forks": 14438,
+      "openIssues": 839,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 11980296,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:38.871Z"
+      "updatedAt": "2026-10-09T00:04:40.897Z"
     },
     {
       "id": "express",
@@ -630,12 +630,12 @@
       "releaseDate": "2025-12-01",
       "stars": 69592,
       "forks": 25174,
-      "openIssues": 237,
+      "openIssues": 238,
       "license": "MIT",
       "lastCommit": "2026-10-06",
       "weeklyDownloads": 169483150,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.065Z"
+      "updatedAt": "2026-10-09T00:04:33.368Z"
     },
     {
       "id": "falcon",
@@ -656,9 +656,9 @@
       "openIssues": 158,
       "license": "Apache-2.0",
       "lastCommit": "2026-10-04",
-      "weeklyDownloads": 308083,
+      "weeklyDownloads": 305800,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.589Z"
+      "updatedAt": "2026-10-09T00:04:33.883Z"
     },
     {
       "id": "fastapi",
@@ -672,16 +672,16 @@
         "manager": "pypi",
         "name": "fastapi"
       },
-      "version": "0.142.4",
-      "releaseDate": "2026-10-07",
-      "stars": 102865,
+      "version": "0.143.0",
+      "releaseDate": "2026-10-08",
+      "stars": 102886,
       "forks": 10003,
       "openIssues": 87,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 104663795,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 105111414,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.296Z"
+      "updatedAt": "2026-10-09T00:04:33.746Z"
     },
     {
       "id": "fastify",
@@ -697,14 +697,14 @@
       },
       "version": "5.12.5",
       "releaseDate": "2026-09-16",
-      "stars": 37239,
-      "forks": 3055,
-      "openIssues": 170,
+      "stars": 37240,
+      "forks": 3058,
+      "openIssues": 174,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 18133557,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.089Z"
+      "updatedAt": "2026-10-09T00:04:33.455Z"
     },
     {
       "id": "fiber",
@@ -716,14 +716,14 @@
       "homepage": "https://gofiber.io",
       "version": "3.5.0",
       "releaseDate": "2026-08-13",
-      "stars": 40199,
-      "forks": 2048,
-      "openIssues": 30,
+      "stars": 40200,
+      "forks": 2046,
+      "openIssues": 22,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:34.908Z"
+      "updatedAt": "2026-10-09T00:04:38.329Z"
     },
     {
       "id": "flask",
@@ -739,14 +739,14 @@
       },
       "version": "3.1.3",
       "releaseDate": "2026-02-19",
-      "stars": 74933,
+      "stars": 74934,
       "forks": 17059,
       "openIssues": 4,
       "license": "BSD-3-Clause",
       "lastCommit": "2026-10-07",
-      "weeklyDownloads": 38202350,
+      "weeklyDownloads": 38225189,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.298Z"
+      "updatedAt": "2026-10-09T00:04:33.684Z"
     },
     {
       "id": "flutter",
@@ -756,16 +756,16 @@
       "language": "Dart",
       "repo": "flutter/flutter",
       "homepage": "https://flutter.dev",
-      "version": "3.47.6",
+      "version": "3.47.7",
       "releaseDate": "2024-01-11",
-      "stars": 179367,
-      "forks": 33243,
-      "openIssues": 13307,
+      "stars": 179187,
+      "forks": 33282,
+      "openIssues": 13300,
       "license": "BSD-3-Clause",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.483Z"
+      "updatedAt": "2026-10-09T00:04:40.305Z"
     },
     {
       "id": "gatsby",
@@ -781,14 +781,14 @@
       },
       "version": "5.16.1",
       "releaseDate": "2026-02-10",
-      "stars": 55941,
-      "forks": 10105,
+      "stars": 55938,
+      "forks": 10107,
       "openIssues": 453,
       "license": "MIT",
       "lastCommit": "2026-10-05",
-      "weeklyDownloads": 329699,
+      "weeklyDownloads": 270409,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:29.773Z"
+      "updatedAt": "2026-10-09T00:04:32.753Z"
     },
     {
       "id": "gin",
@@ -800,14 +800,14 @@
       "homepage": "https://gin-gonic.com/",
       "version": "1.12.0",
       "releaseDate": "2026-02-28",
-      "stars": 89294,
-      "forks": 8733,
-      "openIssues": 788,
+      "stars": 89291,
+      "forks": 8735,
+      "openIssues": 791,
       "license": "MIT",
       "lastCommit": "2026-09-29",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:36.645Z"
+      "updatedAt": "2026-10-09T00:04:36.841Z"
     },
     {
       "id": "gorilla",
@@ -826,7 +826,7 @@
       "lastCommit": "2024-08-15",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:36.258Z"
+      "updatedAt": "2026-10-09T00:04:38.322Z"
     },
     {
       "id": "hanami",
@@ -842,14 +842,14 @@
       },
       "version": "3.0.2",
       "releaseDate": "2026-07-03",
-      "stars": 6423,
+      "stars": 6424,
       "forks": 554,
-      "openIssues": 33,
+      "openIssues": 32,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.816Z"
+      "updatedAt": "2026-10-09T00:04:34.250Z"
     },
     {
       "id": "hono",
@@ -865,14 +865,14 @@
       },
       "version": "4.13.13",
       "releaseDate": "2026-10-04",
-      "stars": 32452,
-      "forks": 1385,
-      "openIssues": 416,
+      "stars": 32459,
+      "forks": 1391,
+      "openIssues": 415,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 85922690,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.122Z"
+      "updatedAt": "2026-10-09T00:04:33.541Z"
     },
     {
       "id": "hugo",
@@ -884,14 +884,14 @@
       "homepage": "https://gohugo.io",
       "version": "0.167.0",
       "releaseDate": "2026-09-28",
-      "stars": 90055,
+      "stars": 90068,
       "forks": 8384,
-      "openIssues": 205,
+      "openIssues": 207,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:38.645Z"
+      "updatedAt": "2026-10-09T00:04:39.872Z"
     },
     {
       "id": "ionic",
@@ -907,14 +907,14 @@
       },
       "version": "9.0.7",
       "releaseDate": "2026-10-07",
-      "stars": 52687,
+      "stars": 52689,
       "forks": 13299,
-      "openIssues": 562,
+      "openIssues": 555,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 151726,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 128666,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:41.000Z"
+      "updatedAt": "2026-10-09T00:04:41.010Z"
     },
     {
       "id": "jekyll",
@@ -926,14 +926,14 @@
       "homepage": "https://jekyllrb.com",
       "version": "4.4.1",
       "releaseDate": "2025-01-29",
-      "stars": 51705,
+      "stars": 51706,
       "forks": 10298,
-      "openIssues": 254,
+      "openIssues": 253,
       "license": "MIT",
       "lastCommit": "2026-09-17",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:38.510Z"
+      "updatedAt": "2026-10-09T00:04:39.663Z"
     },
     {
       "id": "koa",
@@ -949,14 +949,14 @@
       },
       "version": "3.2.1",
       "releaseDate": "2026-05-21",
-      "stars": 35682,
+      "stars": 35680,
       "forks": 3234,
       "openIssues": 41,
       "license": "MIT",
       "lastCommit": "2026-09-19",
-      "weeklyDownloads": 9163176,
+      "weeklyDownloads": 7542545,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.060Z"
+      "updatedAt": "2026-10-09T00:04:33.444Z"
     },
     {
       "id": "laravel",
@@ -972,14 +972,14 @@
       },
       "version": "13.23.0",
       "releaseDate": "2026-07-27",
-      "stars": 34952,
-      "forks": 12015,
-      "openIssues": 89,
+      "stars": 34955,
+      "forks": 12011,
+      "openIssues": 85,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:29.510Z"
+      "updatedAt": "2026-10-09T00:04:33.196Z"
     },
     {
       "id": "leptos",
@@ -996,13 +996,13 @@
       "version": "0.8.22",
       "releaseDate": "2026-10-05",
       "stars": 21370,
-      "forks": 903,
-      "openIssues": 111,
+      "forks": 902,
+      "openIssues": 112,
       "license": "MIT",
       "lastCommit": "2026-10-06",
-      "weeklyDownloads": 1391143,
-      "totalDownloads": 5092831,
-      "updatedAt": "2026-10-07T23:57:27.670Z"
+      "weeklyDownloads": 1396020,
+      "totalDownloads": 5115942,
+      "updatedAt": "2026-10-09T00:04:31.818Z"
     },
     {
       "id": "lit",
@@ -1018,14 +1018,14 @@
       },
       "version": "3.3.3",
       "releaseDate": "2026-05-14",
-      "stars": 21840,
+      "stars": 21843,
       "forks": 1108,
-      "openIssues": 731,
+      "openIssues": 732,
       "license": "BSD-3-Clause",
       "lastCommit": "2026-09-24",
-      "weeklyDownloads": 8679253,
+      "weeklyDownloads": 7026953,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.744Z"
+      "updatedAt": "2026-10-09T00:04:31.600Z"
     },
     {
       "id": "litestar",
@@ -1041,14 +1041,14 @@
       },
       "version": "2.24.0",
       "releaseDate": "2026-06-11",
-      "stars": 8497,
-      "forks": 660,
-      "openIssues": 357,
+      "stars": 8501,
+      "forks": 661,
+      "openIssues": 358,
       "license": "MIT",
       "lastCommit": "2026-10-06",
-      "weeklyDownloads": 371568,
+      "weeklyDownloads": 351991,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.804Z"
+      "updatedAt": "2026-10-09T00:04:34.105Z"
     },
     {
       "id": "mantine",
@@ -1064,14 +1064,14 @@
       },
       "version": "9.7.1",
       "releaseDate": "2026-10-06",
-      "stars": 31805,
-      "forks": 2390,
-      "openIssues": 27,
+      "stars": 31809,
+      "forks": 2389,
+      "openIssues": 29,
       "license": "MIT",
-      "lastCommit": "2026-10-06",
-      "weeklyDownloads": 3305015,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 2742440,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:41.019Z"
+      "updatedAt": "2026-10-09T00:04:41.477Z"
     },
     {
       "id": "mui",
@@ -1087,14 +1087,14 @@
       },
       "version": "9.4.0",
       "releaseDate": "2026-08-27",
-      "stars": 99140,
-      "forks": 32503,
-      "openIssues": 1467,
+      "stars": 99145,
+      "forks": 32507,
+      "openIssues": 1466,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 12503562,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 10064674,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.861Z"
+      "updatedAt": "2026-10-09T00:04:41.228Z"
     },
     {
       "id": "meteor",
@@ -1110,14 +1110,14 @@
       },
       "version": "3.5.2",
       "releaseDate": "2026-09-04",
-      "stars": 44800,
+      "stars": 44797,
       "forks": 5245,
-      "openIssues": 337,
+      "openIssues": 334,
       "license": "NOASSERTION",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 2968,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 2523,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:29.786Z"
+      "updatedAt": "2026-10-09T00:04:33.319Z"
     },
     {
       "id": "micronaut",
@@ -1131,12 +1131,12 @@
       "releaseDate": "2026-10-07",
       "stars": 6432,
       "forks": 1225,
-      "openIssues": 744,
+      "openIssues": 736,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:33.635Z"
+      "updatedAt": "2026-10-09T00:04:36.546Z"
     },
     {
       "id": "nativescript",
@@ -1152,14 +1152,14 @@
       },
       "version": "9.1.2",
       "releaseDate": "2026-10-01",
-      "stars": 25667,
+      "stars": 25664,
       "forks": 1741,
-      "openIssues": 854,
+      "openIssues": 856,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 19750,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 18801,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:39.368Z"
+      "updatedAt": "2026-10-09T00:04:40.013Z"
     },
     {
       "id": "nestjs",
@@ -1175,14 +1175,14 @@
       },
       "version": "12.1.2",
       "releaseDate": "2026-09-30",
-      "stars": 76795,
+      "stars": 76798,
       "forks": 8565,
-      "openIssues": 56,
+      "openIssues": 29,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 19147858,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 16022090,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.212Z"
+      "updatedAt": "2026-10-09T00:04:33.615Z"
     },
     {
       "id": "nextjs",
@@ -1198,14 +1198,14 @@
       },
       "version": "16.4.0",
       "releaseDate": "2026-10-06",
-      "stars": 143238,
-      "forks": 34142,
-      "openIssues": 3566,
+      "stars": 143029,
+      "forks": 34185,
+      "openIssues": 3607,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 76902421,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:28.449Z"
+      "updatedAt": "2026-10-09T00:04:32.275Z"
     },
     {
       "id": "nuxt",
@@ -1221,14 +1221,14 @@
       },
       "version": "4.6.0",
       "releaseDate": "2026-10-05",
-      "stars": 60923,
-      "forks": 5816,
-      "openIssues": 487,
+      "stars": 60928,
+      "forks": 5815,
+      "openIssues": 479,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 2783953,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.951Z"
+      "updatedAt": "2026-10-09T00:04:31.915Z"
     },
     {
       "id": "phalcon",
@@ -1244,14 +1244,14 @@
       },
       "version": "5.22.1",
       "releaseDate": "2026-10-01",
-      "stars": 10820,
+      "stars": 10819,
       "forks": 1930,
-      "openIssues": 44,
+      "openIssues": 43,
       "license": "BSD-3-Clause",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:33.247Z"
+      "updatedAt": "2026-10-09T00:04:35.629Z"
     },
     {
       "id": "play",
@@ -1264,13 +1264,13 @@
       "version": "3.0.12",
       "releaseDate": "2026-09-30",
       "stars": 12616,
-      "forks": 4014,
-      "openIssues": 494,
+      "forks": 4013,
+      "openIssues": 497,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:36.652Z"
+      "updatedAt": "2026-10-09T00:04:37.760Z"
     },
     {
       "id": "poem",
@@ -1286,14 +1286,14 @@
       },
       "version": "3.1.12",
       "releaseDate": "2025-07-28",
-      "stars": 4444,
+      "stars": 4445,
       "forks": 360,
-      "openIssues": 180,
+      "openIssues": 181,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 771364,
-      "totalDownloads": 5922163,
-      "updatedAt": "2026-10-07T23:57:37.048Z"
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 776794,
+      "totalDownloads": 5935282,
+      "updatedAt": "2026-10-09T00:04:38.581Z"
     },
     {
       "id": "preact",
@@ -1307,16 +1307,16 @@
         "manager": "npm",
         "name": "preact"
       },
-      "version": "11.0.0",
-      "releaseDate": "2026-09-30",
-      "stars": 38916,
-      "forks": 3872,
+      "version": "11.0.1",
+      "releaseDate": "2026-10-08",
+      "stars": 38915,
+      "forks": 3924,
       "openIssues": 40,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 44522620,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 37095091,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.693Z"
+      "updatedAt": "2026-10-09T00:04:31.615Z"
     },
     {
       "id": "pyramid",
@@ -1337,9 +1337,9 @@
       "openIssues": 91,
       "license": "NOASSERTION",
       "lastCommit": "2026-08-04",
-      "weeklyDownloads": 484338,
+      "weeklyDownloads": 484039,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.570Z"
+      "updatedAt": "2026-10-09T00:04:33.739Z"
     },
     {
       "id": "quarkus",
@@ -1351,14 +1351,14 @@
       "homepage": "https://quarkus.io",
       "version": "4.0.0.Beta1",
       "releaseDate": "2026-10-01",
-      "stars": 15932,
+      "stars": 15933,
       "forks": 3329,
-      "openIssues": 2799,
+      "openIssues": 2826,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:35.870Z"
+      "updatedAt": "2026-10-09T00:04:37.157Z"
     },
     {
       "id": "qwik",
@@ -1374,14 +1374,14 @@
       },
       "version": "1.20.2",
       "releaseDate": "2026-10-06",
-      "stars": 22068,
-      "forks": 1404,
-      "openIssues": 121,
+      "stars": 22067,
+      "forks": 1405,
+      "openIssues": 126,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 74347,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 66381,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.417Z"
+      "updatedAt": "2026-10-09T00:04:31.408Z"
     },
     {
       "id": "react",
@@ -1397,14 +1397,14 @@
       },
       "version": "19.3.0",
       "releaseDate": "2026-09-09",
-      "stars": 250921,
-      "forks": 51445,
-      "openIssues": 1418,
+      "stars": 250752,
+      "forks": 51454,
+      "openIssues": 1426,
       "license": "MIT",
       "lastCommit": "2026-10-07",
       "weeklyDownloads": 224422510,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.770Z"
+      "updatedAt": "2026-10-09T00:04:31.710Z"
     },
     {
       "id": "react-native",
@@ -1420,14 +1420,14 @@
       },
       "version": "0.87.1",
       "releaseDate": "2026-08-26",
-      "stars": 126810,
-      "forks": 25301,
-      "openIssues": 1157,
+      "stars": 126601,
+      "forks": 25302,
+      "openIssues": 1155,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 16885150,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:38.864Z"
+      "updatedAt": "2026-10-09T00:04:39.916Z"
     },
     {
       "id": "redwood",
@@ -1443,14 +1443,14 @@
       },
       "version": "8.9.0",
       "releaseDate": "2025-10-21",
-      "stars": 17589,
+      "stars": 17588,
       "forks": 996,
       "openIssues": 299,
       "license": "MIT",
       "lastCommit": "2026-10-05",
-      "weeklyDownloads": 9340,
+      "weeklyDownloads": 8528,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:29.963Z"
+      "updatedAt": "2026-10-09T00:04:33.181Z"
     },
     {
       "id": "remix",
@@ -1466,14 +1466,14 @@
       },
       "version": "2.17.5",
       "releaseDate": "2026-06-01",
-      "stars": 33397,
+      "stars": 33400,
       "forks": 2788,
-      "openIssues": 36,
+      "openIssues": 31,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 667618,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 551791,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:28.040Z"
+      "updatedAt": "2026-10-09T00:04:32.051Z"
     },
     {
       "id": "revel",
@@ -1485,14 +1485,14 @@
       "homepage": "http://revel.github.io",
       "version": "1.1.0",
       "releaseDate": "2022-04-12",
-      "stars": 13215,
+      "stars": 13214,
       "forks": 1351,
       "openIssues": 94,
       "license": "MIT",
       "lastCommit": "2023-10-28",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:36.659Z"
+      "updatedAt": "2026-10-09T00:04:38.327Z"
     },
     {
       "id": "rocket",
@@ -1513,9 +1513,9 @@
       "openIssues": 93,
       "license": "NOASSERTION",
       "lastCommit": "2025-12-28",
-      "weeklyDownloads": 2229808,
-      "totalDownloads": 14207630,
-      "updatedAt": "2026-10-07T23:57:37.486Z"
+      "weeklyDownloads": 2238851,
+      "totalDownloads": 14232680,
+      "updatedAt": "2026-10-09T00:04:39.050Z"
     },
     {
       "id": "roda",
@@ -1535,10 +1535,10 @@
       "forks": 157,
       "openIssues": 0,
       "license": "MIT",
-      "lastCommit": "2026-09-26",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.983Z"
+      "updatedAt": "2026-10-09T00:04:36.257Z"
     },
     {
       "id": "rails",
@@ -1554,14 +1554,14 @@
       },
       "version": "8.1.4",
       "releaseDate": "2026-07-29",
-      "stars": 58808,
-      "forks": 24526,
-      "openIssues": 1652,
+      "stars": 58809,
+      "forks": 24572,
+      "openIssues": 1656,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:28.930Z"
+      "updatedAt": "2026-10-09T00:04:33.094Z"
     },
     {
       "id": "sails",
@@ -1582,9 +1582,9 @@
       "openIssues": 594,
       "license": "MIT",
       "lastCommit": "2026-05-27",
-      "weeklyDownloads": 47079,
+      "weeklyDownloads": 36919,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.264Z"
+      "updatedAt": "2026-10-09T00:04:33.680Z"
     },
     {
       "id": "sanic",
@@ -1605,9 +1605,9 @@
       "openIssues": 157,
       "license": "MIT",
       "lastCommit": "2026-07-29",
-      "weeklyDownloads": 257874,
+      "weeklyDownloads": 258587,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.623Z"
+      "updatedAt": "2026-10-09T00:04:33.942Z"
     },
     {
       "id": "shadcn",
@@ -1623,14 +1623,14 @@
       },
       "version": "4.21.4",
       "releaseDate": "2026-10-07",
-      "stars": 125257,
-      "forks": 12384,
-      "openIssues": 1757,
+      "stars": 125139,
+      "forks": 12445,
+      "openIssues": 1776,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 13356686,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:41.002Z"
+      "updatedAt": "2026-10-09T00:04:41.387Z"
     },
     {
       "id": "sinatra",
@@ -1647,13 +1647,13 @@
       "version": "4.2.1",
       "releaseDate": "2025-10-10",
       "stars": 12452,
-      "forks": 2074,
+      "forks": 2075,
       "openIssues": 48,
       "license": "MIT",
       "lastCommit": "2026-07-20",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.833Z"
+      "updatedAt": "2026-10-09T00:04:34.119Z"
     },
     {
       "id": "slim",
@@ -1676,7 +1676,7 @@
       "lastCommit": "2026-10-01",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:32.369Z"
+      "updatedAt": "2026-10-09T00:04:34.953Z"
     },
     {
       "id": "solid",
@@ -1692,14 +1692,14 @@
       },
       "version": "1.9.17",
       "releaseDate": "2026-10-07",
-      "stars": 36103,
-      "forks": 1123,
-      "openIssues": 39,
+      "stars": 36106,
+      "forks": 1124,
+      "openIssues": 55,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 7940001,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.405Z"
+      "updatedAt": "2026-10-09T00:04:31.483Z"
     },
     {
       "id": "solidstart",
@@ -1715,14 +1715,14 @@
       },
       "version": "0.3.11",
       "releaseDate": "2024-03-20",
-      "stars": 5925,
-      "forks": 427,
+      "stars": 5924,
+      "forks": 425,
       "openIssues": 30,
       "license": "MIT",
       "lastCommit": "2026-10-07",
-      "weeklyDownloads": 17005,
+      "weeklyDownloads": 18151,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:28.458Z"
+      "updatedAt": "2026-10-09T00:04:32.088Z"
     },
     {
       "id": "spring-boot",
@@ -1734,14 +1734,14 @@
       "homepage": "https://spring.io/projects/spring-boot",
       "version": "4.1.1",
       "releaseDate": "2026-08-20",
-      "stars": 81566,
-      "forks": 44200,
-      "openIssues": 481,
+      "stars": 81574,
+      "forks": 44237,
+      "openIssues": 495,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:29.498Z"
+      "updatedAt": "2026-10-09T00:04:33.091Z"
     },
     {
       "id": "starlette",
@@ -1757,14 +1757,14 @@
       },
       "version": "1.7.0",
       "releaseDate": "2026-09-23",
-      "stars": 12654,
-      "forks": 1363,
-      "openIssues": 56,
+      "stars": 12655,
+      "forks": 1364,
+      "openIssues": 59,
       "license": "BSD-3-Clause",
       "lastCommit": "2026-10-06",
-      "weeklyDownloads": 132314317,
+      "weeklyDownloads": 133049001,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.580Z"
+      "updatedAt": "2026-10-09T00:04:33.905Z"
     },
     {
       "id": "svelte",
@@ -1780,14 +1780,14 @@
       },
       "version": "5.57.2",
       "releaseDate": "2026-10-06",
-      "stars": 88355,
-      "forks": 7389,
-      "openIssues": 1124,
+      "stars": 88359,
+      "forks": 7428,
+      "openIssues": 1129,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 7724778,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.407Z"
+      "updatedAt": "2026-10-09T00:04:31.355Z"
     },
     {
       "id": "sveltekit",
@@ -1803,14 +1803,14 @@
       },
       "version": "3.0.1",
       "releaseDate": "2026-10-06",
-      "stars": 20844,
+      "stars": 20847,
       "forks": 2346,
-      "openIssues": 833,
+      "openIssues": 844,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 3634608,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 3145676,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:28.025Z"
+      "updatedAt": "2026-10-09T00:04:31.945Z"
     },
     {
       "id": "symfony",
@@ -1826,14 +1826,14 @@
       },
       "version": "8.1.8",
       "releaseDate": "2026-09-29",
-      "stars": 31182,
-      "forks": 9898,
-      "openIssues": 145,
+      "stars": 31181,
+      "forks": 9900,
+      "openIssues": 149,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.907Z"
+      "updatedAt": "2026-10-09T00:04:34.241Z"
     },
     {
       "id": "tailwind",
@@ -1849,14 +1849,14 @@
       },
       "version": "4.3.3",
       "releaseDate": "2026-07-16",
-      "stars": 97796,
-      "forks": 7694,
-      "openIssues": 99,
+      "stars": 97802,
+      "forks": 7745,
+      "openIssues": 101,
       "license": "MIT",
       "lastCommit": "2026-09-25",
       "weeklyDownloads": 163032225,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.737Z"
+      "updatedAt": "2026-10-09T00:04:41.111Z"
     },
     {
       "id": "tauri",
@@ -1872,14 +1872,14 @@
       },
       "version": "2.12.1",
       "releaseDate": "2026-09-30",
-      "stars": 111649,
-      "forks": 4044,
-      "openIssues": 1486,
+      "stars": 111669,
+      "forks": 4045,
+      "openIssues": 1488,
       "license": "Apache-2.0",
-      "lastCommit": "2026-10-07",
-      "weeklyDownloads": 3396552,
+      "lastCommit": "2026-10-08",
+      "weeklyDownloads": 2934601,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:39.946Z"
+      "updatedAt": "2026-10-09T00:04:40.595Z"
     },
     {
       "id": "tide",
@@ -1900,9 +1900,9 @@
       "openIssues": 135,
       "license": "Apache-2.0",
       "lastCommit": "2024-01-05",
-      "weeklyDownloads": 222200,
-      "totalDownloads": 3619701,
-      "updatedAt": "2026-10-07T23:57:37.991Z"
+      "weeklyDownloads": 223055,
+      "totalDownloads": 3623312,
+      "updatedAt": "2026-10-09T00:04:39.351Z"
     },
     {
       "id": "tornado",
@@ -1918,14 +1918,14 @@
       },
       "version": "6.5.10",
       "releaseDate": "2026-10-07",
-      "stars": 22166,
+      "stars": 22164,
       "forks": 5566,
       "openIssues": 213,
       "license": "Apache-2.0",
       "lastCommit": "2026-10-07",
-      "weeklyDownloads": 24596640,
+      "weeklyDownloads": 24579949,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:30.470Z"
+      "updatedAt": "2026-10-09T00:04:33.849Z"
     },
     {
       "id": "vertx",
@@ -1937,14 +1937,14 @@
       "homepage": "https://vertx.io",
       "version": "5.2.1",
       "releaseDate": null,
-      "stars": 14688,
-      "forks": 2108,
-      "openIssues": 219,
+      "stars": 14686,
+      "forks": 2110,
+      "openIssues": 221,
       "license": "NOASSERTION",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:34.013Z"
+      "updatedAt": "2026-10-09T00:04:35.955Z"
     },
     {
       "id": "vitepress",
@@ -1960,14 +1960,14 @@
       },
       "version": "1.6.4",
       "releaseDate": "2025-08-05",
-      "stars": 18384,
+      "stars": 18391,
       "forks": 2743,
-      "openIssues": 324,
+      "openIssues": 328,
       "license": "MIT",
       "lastCommit": "2026-10-05",
-      "weeklyDownloads": 1426479,
+      "weeklyDownloads": 1218480,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:38.014Z"
+      "updatedAt": "2026-10-09T00:04:39.360Z"
     },
     {
       "id": "vue",
@@ -1983,14 +1983,14 @@
       },
       "version": "3.5.43",
       "releaseDate": "2026-09-17",
-      "stars": 54588,
+      "stars": 54589,
       "forks": 9244,
-      "openIssues": 963,
+      "openIssues": 944,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": 20397470,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:27.412Z"
+      "updatedAt": "2026-10-09T00:04:31.350Z"
     },
     {
       "id": "wails",
@@ -2002,14 +2002,14 @@
       "homepage": "https://wails.io",
       "version": "2.16.0",
       "releaseDate": "2026-08-10",
-      "stars": 36473,
+      "stars": 36486,
       "forks": 1879,
       "openIssues": 380,
       "license": "MIT",
-      "lastCommit": "2026-10-07",
+      "lastCommit": "2026-10-08",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:40.476Z"
+      "updatedAt": "2026-10-09T00:04:40.882Z"
     },
     {
       "id": "warp",
@@ -2030,9 +2030,9 @@
       "openIssues": 233,
       "license": "MIT",
       "lastCommit": "2026-07-28",
-      "weeklyDownloads": 6057948,
-      "totalDownloads": 50074814,
-      "updatedAt": "2026-10-07T23:57:36.902Z"
+      "weeklyDownloads": 6083048,
+      "totalDownloads": 50167113,
+      "updatedAt": "2026-10-09T00:04:38.595Z"
     },
     {
       "id": "yew",
@@ -2048,14 +2048,14 @@
       },
       "version": "0.23.0",
       "releaseDate": "2026-03-10",
-      "stars": 32820,
+      "stars": 32821,
       "forks": 1452,
       "openIssues": 121,
       "license": "Apache-2.0",
       "lastCommit": "2026-10-03",
-      "weeklyDownloads": 436013,
-      "totalDownloads": 5023032,
-      "updatedAt": "2026-10-07T23:57:27.920Z"
+      "weeklyDownloads": 436806,
+      "totalDownloads": 5028010,
+      "updatedAt": "2026-10-09T00:04:31.867Z"
     },
     {
       "id": "yii",
@@ -2071,14 +2071,14 @@
       },
       "version": "2.0.55",
       "releaseDate": "2026-05-09",
-      "stars": 14283,
-      "forks": 6755,
-      "openIssues": 308,
+      "stars": 14282,
+      "forks": 6754,
+      "openIssues": 309,
       "license": "BSD-3-Clause",
       "lastCommit": "2026-10-07",
       "weeklyDownloads": null,
       "totalDownloads": null,
-      "updatedAt": "2026-10-07T23:57:32.801Z"
+      "updatedAt": "2026-10-09T00:04:35.291Z"
     }
   ]
 }
