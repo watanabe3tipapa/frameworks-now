@@ -3243,6 +3243,10 @@
     "id": "electron",
     "releases": [
       {
+        "version": "46.0.0-alpha.2",
+        "date": "2026-10-26"
+      },
+      {
         "version": "46.0.0-alpha.1",
         "date": "2026-10-23"
       },
@@ -3356,10 +3360,6 @@
       },
       {
         "version": "44.7.0",
-        "date": "2026-10-07"
-      },
-      {
-        "version": "42.11.12",
         "date": "2026-10-07"
       }
     ]
@@ -3493,6 +3493,10 @@
     "id": "ember",
     "releases": [
       {
+        "version": "7.4.0",
+        "date": "2026-10-26"
+      },
+      {
         "version": "7.5.0-alpha.5",
         "date": "2026-10-21"
       },
@@ -3607,10 +3611,6 @@
       {
         "version": "7.1.0-alpha.4",
         "date": "2026-04-29"
-      },
-      {
-        "version": "7.1.0-alpha.3",
-        "date": "2026-04-22"
       }
     ]
   },
@@ -5323,6 +5323,10 @@
     "id": "ionic",
     "releases": [
       {
+        "version": "9.0.10-nightly.20261026",
+        "date": "2026-10-26"
+      },
+      {
         "version": "9.0.10-dev.11792788258.1f71cfee",
         "date": "2026-10-23"
       },
@@ -5437,10 +5441,6 @@
       {
         "version": "9.0.7-nightly.20261006",
         "date": "2026-10-06"
-      },
-      {
-        "version": "9.0.7-nightly.20261005",
-        "date": "2026-10-05"
       }
     ]
   },
@@ -8068,6 +8068,14 @@
     "id": "react",
     "releases": [
       {
+        "version": "0.0.0-experimental-fd51cb10-20261026",
+        "date": "2026-10-26"
+      },
+      {
+        "version": "19.3.0-canary-fd51cb10-20261026",
+        "date": "2026-10-26"
+      },
+      {
         "version": "0.0.0-experimental-a6b912fb-20261023",
         "date": "2026-10-23"
       },
@@ -8178,20 +8186,16 @@
       {
         "version": "19.3.0-canary-17eca7b0-20261006",
         "date": "2026-10-06"
-      },
-      {
-        "version": "0.0.0-experimental-278794d7-20261002",
-        "date": "2026-10-02"
-      },
-      {
-        "version": "19.3.0-canary-278794d7-20261002",
-        "date": "2026-10-02"
       }
     ]
   },
   {
     "id": "react-native",
     "releases": [
+      {
+        "version": "0.89.0-nightly-20261026-54b5f22c3",
+        "date": "2026-10-26"
+      },
       {
         "version": "0.89.0-nightly-20261025-7fc911afd",
         "date": "2026-10-25"
@@ -8307,10 +8311,6 @@
       {
         "version": "0.89.0-nightly-20260930-085caf035",
         "date": "2026-09-30"
-      },
-      {
-        "version": "0.88.0-rc.3",
-        "date": "2026-09-28"
       }
     ]
   },
@@ -10223,6 +10223,10 @@
     "id": "svelte",
     "releases": [
       {
+        "version": "5.57.3",
+        "date": "2026-10-26"
+      },
+      {
         "version": "5.57.2",
         "date": "2026-10-06"
       },
@@ -10337,10 +10341,6 @@
       {
         "version": "5.53.12",
         "date": "2026-03-14"
-      },
-      {
-        "version": "5.53.11",
-        "date": "2026-03-12"
       }
     ]
   },
@@ -11487,6 +11487,11 @@
     "id": "wails",
     "releases": [
       {
+        "version": "3.0.0",
+        "date": "2026-10-26",
+        "prerelease": false
+      },
+      {
         "version": "3.0.0-beta.34",
         "date": "2026-10-20",
         "prerelease": true
@@ -11630,11 +11635,6 @@
         "version": "3.0.0-beta.7",
         "date": "2026-08-11",
         "prerelease": true
-      },
-      {
-        "version": "2.14.0",
-        "date": "2026-08-10",
-        "prerelease": false
       }
     ]
   },
