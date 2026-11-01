@@ -2028,6 +2028,22 @@
     "id": "cakephp",
     "releases": [
       {
+        "version": "5.3.8",
+        "date": "2026-11-01"
+      },
+      {
+        "version": "5.2.16",
+        "date": "2026-11-01"
+      },
+      {
+        "version": "4.6.6",
+        "date": "2026-11-01"
+      },
+      {
+        "version": "5.4.4",
+        "date": "2026-11-01"
+      },
+      {
         "version": "5.4.3",
         "date": "2026-10-03"
       },
@@ -2130,22 +2146,6 @@
       {
         "version": "5.2.10",
         "date": "2025-12-05"
-      },
-      {
-        "version": "4.6.3",
-        "date": "2025-12-01"
-      },
-      {
-        "version": "5.2.9",
-        "date": "2025-10-17"
-      },
-      {
-        "version": "5.2.8",
-        "date": "2025-09-24"
-      },
-      {
-        "version": "5.2.7",
-        "date": "2025-08-31"
       }
     ]
   },
@@ -2433,6 +2433,10 @@
     "id": "codeigniter",
     "releases": [
       {
+        "version": "4.7.6",
+        "date": "2026-11-01"
+      },
+      {
         "version": "4.7.5",
         "date": "2026-10-09"
       },
@@ -2547,10 +2551,6 @@
       {
         "version": "4.4.1",
         "date": "2023-09-05"
-      },
-      {
-        "version": "4.4.0",
-        "date": "2023-08-25"
       }
     ]
   },
@@ -5043,6 +5043,14 @@
     "id": "hono",
     "releases": [
       {
+        "version": "4.13.16",
+        "date": "2026-11-01"
+      },
+      {
+        "version": "4.13.15",
+        "date": "2026-11-01"
+      },
+      {
         "version": "4.13.14",
         "date": "2026-10-25"
       },
@@ -5153,14 +5161,6 @@
       {
         "version": "4.12.24",
         "date": "2026-06-08"
-      },
-      {
-        "version": "4.12.23",
-        "date": "2026-05-25"
-      },
-      {
-        "version": "4.12.22",
-        "date": "2026-05-22"
       }
     ]
   },
@@ -6883,6 +6883,10 @@
     "id": "nextjs",
     "releases": [
       {
+        "version": "16.5.0-canary.36",
+        "date": "2026-10-31"
+      },
+      {
         "version": "16.5.0-canary.35",
         "date": "2026-10-31"
       },
@@ -6997,10 +7001,6 @@
       {
         "version": "16.5.0-canary.10",
         "date": "2026-10-13"
-      },
-      {
-        "version": "16.5.0-canary.9",
-        "date": "2026-10-12"
       }
     ]
   },
@@ -8193,6 +8193,10 @@
     "id": "react-native",
     "releases": [
       {
+        "version": "0.89.0-nightly-20261101-f1f147405",
+        "date": "2026-11-01"
+      },
+      {
         "version": "0.89.0-nightly-20261031-e57dcb3cc",
         "date": "2026-10-31"
       },
@@ -8307,10 +8311,6 @@
       {
         "version": "0.89.0-nightly-20261006-99d327c61",
         "date": "2026-10-06"
-      },
-      {
-        "version": "0.89.0-nightly-20261005-024b474ce",
-        "date": "2026-10-05"
       }
     ]
   },
@@ -10598,6 +10598,10 @@
     "id": "tailwind",
     "releases": [
       {
+        "version": "0.0.0-insiders.654f89f",
+        "date": "2026-11-01"
+      },
+      {
         "version": "0.0.0-insiders.8cc0551",
         "date": "2026-10-19"
       },
@@ -10711,10 +10715,6 @@
       },
       {
         "version": "0.0.0-insiders.90f8ff4",
-        "date": "2026-08-14"
-      },
-      {
-        "version": "0.0.0-insiders.7a7f386",
         "date": "2026-08-14"
       }
     ]
@@ -11487,6 +11487,21 @@
     "id": "wails",
     "releases": [
       {
+        "version": "3.2.0-nightly.20261101",
+        "date": "2026-11-01",
+        "prerelease": true
+      },
+      {
+        "version": "3.1.0",
+        "date": "2026-11-01",
+        "prerelease": false
+      },
+      {
+        "version": "2.17.1",
+        "date": "2026-11-01",
+        "prerelease": false
+      },
+      {
         "version": "3.1.0-nightly.20261028",
         "date": "2026-10-28",
         "prerelease": true
@@ -11619,21 +11634,6 @@
       {
         "version": "3.0.0-beta.12",
         "date": "2026-08-21",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-beta.11",
-        "date": "2026-08-20",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-beta.10",
-        "date": "2026-08-19",
-        "prerelease": true
-      },
-      {
-        "version": "3.0.0-beta.9",
-        "date": "2026-08-16",
         "prerelease": true
       }
     ]
